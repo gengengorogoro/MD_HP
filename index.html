@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>メディカルゼロ | 思考力と習慣を鍛える成長特化型コーチング学習塾 | 広島</title>
+  <meta name="description" content="広島市中区の高校生向けコーチング型学習塾「メディカルゼロ」。医学部生による1対1の個別コーチング、「教えない・引き出す」独自アプローチで思考力と自走力を育成。補食サービスや部活と勉強の両立支援も特徴。">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', 'Noto Sans JP', sans-serif; }
+    .main-hero-bg {
+      background: linear-gradient(rgba(10,48,82,0.65),rgba(14,165,233,0.34)), url('https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+    }
+    .fade-in { animation: fadeInUp 1.1s cubic-bezier(.4,0,.2,1) 0.1s backwards; }
+    @keyframes fadeInUp {
+      from { opacity:0; transform:translateY(30px);}
+      to { opacity:1; transform:translateY(0);}
+    }
+    .nav-button { transition: background 0.2s, color 0.2s; }
+    .nav-button:hover { background: #2563eb; color: #fff;}
+    .circular-gradient {
+      background: radial-gradient(circle at 25% 25%, #60a5fa 0%, #1e3a8a 100%);
+      color: white;
+    }
+    .fise-arrow:after {
+      content: '\f061';
+      font-family:'FontAwesome';
+      margin: 0 0.5rem;
+      font-size: 1.3em;
+      color: #2563eb;
+      vertical-align:middle;
+    }
+    .fise-arrow:last-child:after {
+      content: '';
+      margin:0;
+    }
+    /* Hide scrollbars in PDF/export */
+    ::-webkit-scrollbar { display: none; }
+    /* For PDF export optimize: no sticky, keep relative */
+    @media print {
+      .sticky, .fixed { position: relative !important; }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white border-b shadow-sm">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Medical_Icon_MedZero.svg" alt="MedicalZeroロゴ" class="h-10 w-10 rounded-full bg-gray-100 object-contain" onerror="this.src='https://dummyimage.com/80x80/1960A0/fff.png&text=MZ';">
+        <span class="font-bold text-xl text-blue-900 tracking-wide">メディカルゼロ</span>
+      </div>
+      <nav class="hidden md:flex space-x-8 text-base font-medium">
+        <a href="index.html" class="text-gray-700 hover:text-blue-700 transition">ホーム</a>
+        <a href="characteristics.html" class="text-gray-700 hover:text-blue-700 transition">特徴</a>
+        <a href="solution.html" class="text-gray-700 hover:text-blue-700 transition">解決策</a>
+        <a href="difference.html" class="text-gray-700 hover:text-blue-700 transition">他塾との違い</a>
+        <a href="teacher.html" class="text-gray-700 hover:text-blue-700 transition">講師紹介</a>
+        <a href="story.html" class="text-gray-700 hover:text-blue-700 transition">ストーリー</a>
+        <a href="cost.html" class="text-gray-700 hover:text-blue-700 transition">料金・コース</a>
+        <a href="faq.html" class="text-gray-700 hover:text-blue-700 transition">アクセス・お問い合わせ</a>
+      </nav>
+      <a href="#contact" class="nav-button hidden md:inline-block ml-6 px-5 py-2 rounded-full bg-blue-600 text-white font-bold transition shadow hover:bg-blue-700">無料体験申し込み</a>
+      <button id="menuBtn" class="md:hidden px-2 py-1">
+        <i class="fas fa-bars text-2xl text-blue-900"></i>
+      </button>
+    </div>
+    <!-- Mobile Nav -->
+    <div id="mobileNav" class="md:hidden fixed inset-0 z-50 bg-white bg-opacity-95 hidden flex-col p-8 space-y-6">
+      <div class="flex justify-between items-center mb-8">
+        <span class="font-bold text-xl text-blue-900 tracking-wide">メディカルゼロ</span>
+        <button onclick="document.getElementById('mobileNav').classList.add('hidden')"><i class="fas fa-times text-2xl text-blue-900"></i></button>
+      </div>
+      <a href="index.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">ホーム</a>
+      <a href="characteristics.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">特徴</a>
+      <a href="solution.html".html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">解決策</a>
+      <a href="difference.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">他塾との違い</a>
+      <a href="teacher.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">講師紹介</a>
+      <a href="story.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">ストーリー</a>
+      <a href="#cost.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">料金・コース</a>
+      <a href="faq.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">アクセス・お問い合わせ</a>
+      <a href="#contact" class="mt-4 nav-button px-5 py-2 rounded-full bg-blue-600 text-white font-bold transition shadow hover:bg-blue-700">無料体験申し込み</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <div class="main-hero-bg py-24 lg:py-48 text-white text-center relative overflow-hidden fade-in">
+    <div class="container mx-auto flex flex-col items-center">
+      <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-5 drop-shadow-lg">正解のない時代を、自ら切り開く力を育てる</h1>
+      <p class="text-lg md:text-2xl font-semibold mb-10">思考力と習慣を鍛える 成長特化型コーチング学習塾</p>
+      <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
+        <a href="#contact" class="bg-blue-500 hover:bg-blue-700 px-8 py-3 rounded-full font-bold text-white shadow-lg text-lg transition">無料体験・お問い合わせ</a>
+        <a href="#feature" class="bg-white bg-opacity-30 hover:bg-opacity-60 text-white hover:text-blue-900 px-8 py-3 rounded-full font-bold border border-white shadow text-lg transition">詳しく見る</a>
+      </div>
+    </div>
+    <span class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-gray-50 to-transparent pointer-events-none"></span>
+  </div>
+
+  <!-- 悩みセクション -->
+  <section id="problems" class="container mx-auto py-12 px-4">
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-10 text-blue-900 tracking-tight">こんなお悩みありませんか？</h2>
+    <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
+      <div class="bg-white rounded-xl shadow-md p-7 flex flex-col items-center w-full md:w-1/3 fade-in">
+        <i class="fas fa-clock fa-2x text-blue-400 mb-4"></i>
+        <span class="text-lg font-semibold mb-2 text-blue-900">勉強習慣が身につかない</span>
+        <p class="text-gray-600 text-sm">どうしてもダラダラして続かない。習慣化がうまくできない。</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-7 flex flex-col items-center w-full md:w-1/3 fade-in">
+        <i class="fas fa-brain fa-2x text-blue-400 mb-4"></i>
+        <span class="text-lg font-semibold mb-2 text-blue-900">自分に合った学習法がわからない</span>
+        <p class="text-gray-600 text-sm">いろいろ試してもピンとこない。本当に合うやり方で伸ばしたい。</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-7 flex flex-col items-center w-full md:w-1/3 fade-in">
+        <i class="fas fa-running fa-2x text-blue-400 mb-4"></i>
+        <span class="text-lg font-semibold mb-2 text-blue-900">部活と勉強を両立したい</span>
+        <p class="text-gray-600 text-sm">部活で忙しい…でも志望校も諦めたくない！時間が足りない…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 特徴紹介 -->
+  <section id="feature" class="py-12 bg-gradient-to-b from-white via-blue-50 to-white fade-in">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row gap-10 items-center">
+        <div class="w-full md:w-1/2">
+          <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-4">思考力と習慣を鍛え、<br class="hidden md:block">逆転合格を実現する個別コーチング塾です</h2>
+          <p class="text-gray-700 mb-6">メディカルゼロは「正しい努力」と「思考力」を軸とした成長特化型コーチング塾。医学部生講師によるマンツーマン指導、個々に最適な勉強スタイルを提案し、自己変革＆逆転合格を徹底サポートします。</p>
+          <ul class="mb-4 ml-3 list-disc text-sm text-gray-600">
+            <li>完全オーダーメイド学習計画</li>
+            <li>生徒一人ひとりに合わせた徹底伴走</li>
+            <li>勉強以外も視野に入れた成長支援</li>
+          </ul>
+          <div class="mt-3 bg-white rounded-lg shadow p-5">
+            <h3 class="text-blue-700 font-semibold mb-1"><i class="fas fa-user-graduate mr-2"></i>1対1の手厚い指導</h3>
+            <p class="text-gray-700 text-sm">現役医学部生による個別コーチングで、一人ひとりの可能性を徹底的に引き出します。学力・性格・部活状況を踏まえてオーダーメイド学習設計。</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 flex justify-center">
+          <img class="rounded-2xl object-cover shadow-lg border-4 border-blue-200 max-w-full h-72 sm:h-96 fade-in" src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=700&q=80" alt="個別コーチングのイメージ">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7つの強み -->
+  <section id="strengths" class="container mx-auto py-14 px-4 fade-in">
+    <h2 class="text-2xl md:text-3xl font-bold text-center text-blue-900 mb-10">メディカルゼロの7つの強み</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div class="flex flex-col items-center p-6 bg-white shadow rounded-2xl h-full">
+        <i class="fas fa-book-open fa-2x text-blue-500 mb-3"></i>
+        <span class="font-bold text-blue-900 mb-1">最適な参考書選び</span>
+        <p class="text-gray-600 text-sm text-center">一人ひとりに合った教材だけを厳選。無駄なく最短で実力UP。</p>
+      </div>
+      <div class="flex flex-col items-center p-6 bg-white shadow rounded-2xl h-full">
+        <i class="fas fa-lightbulb fa-2x text-blue-500 mb-3"></i>
+        <span class="font-bold text-blue-900 mb-1">最適な勉強法提示</span>
+        <p class="text-gray-600 text-sm text-center">学力・性格・生活リズムに合わせて最適な勉強法を提案します。</p>
+      </div>
+      <div class="flex flex-col items-center p-6 bg-white shadow rounded-2xl h-full">
+        <i class="fas fa-flag-checkered fa-2x text-blue-500 mb-3"></i>
+        <span class="font-bold text-blue-900 mb-1">志望校合格の学習戦略</span>
+        <p class="text-gray-600 text-sm text-center">合格から逆算したルートで迷わず直進。毎週PDCAで進化。</p>
+      </div>
+      <div class="flex flex-col items-center p-6 bg-white shadow rounded-2xl h-full">
+        <i class="fas fa-chart-line fa-2x text-blue-500 mb-3"></i>
+        <span class="font-bold text-blue-900 mb-1">徹底した学習管理</span>
+        <p class="text-gray-600 text-sm text-center">週次面談・日報管理で「やり切る力」を身につけます。</p>
+      </div>
+      <div class="flex flex-col items-center p-6 bg-white shadow rounded-2xl h-full">
+        <i class="fas fa-user-shield fa-2x text-blue-500 mb-3"></i>
+        <span class="font-bold text-blue-900 mb-1">専属コーチ制</span>
+        <p class="text-gray-600 text-sm text-center">毎週同じコーチが伴走。安心できる相談相手で成長を徹底サポート。</p>
+      </div>
+      <div class="flex flex-col items-center p-6 bg-white shadow rounded-2xl h-full">
+        <i class="fas fa-running fa-2x text-blue-500 mb-3"></i>
+        <span class="font-bold text-blue-900 mb-1">部活と両立できる時間設計</span>
+        <p class="text-gray-600 text-sm text-center">限られた時間で最大の効果。部活も受験も両立を実現します。</p>
+      </div>
+      <div class="flex flex-col items-center p-6 bg-white shadow rounded-2xl h-full">
+        <i class="fas fa-apple-alt fa-2x text-blue-500 mb-3"></i>
+        <span class="font-bold text-blue-900 mb-1">補食サービス</span>
+        <p class="text-gray-600 text-sm text-center">夕方～夜に塾提携飲食店から「おにぎり」等を提供。集中力と健康サポート!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FISEサイクル -->
+  <section id="fise" class="py-14 bg-gradient-to-b from-blue-100 via-white to-white fade-in">
+    <div class="container mx-auto px-4 flex flex-col items-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900 text-center mb-8">独自のFISEサイクル</h2>
+      <div class="flex flex-col md:flex-row items-center w-full md:w-auto justify-center mb-6">
+        <div class="flex items-center flex-wrap gap-6">
+          <span class="rounded-full circular-gradient px-7 py-5 font-bold text-lg shadow fise-arrow">Find <span class="block text-xs font-medium opacity-70">問題発掘</span></span>
+          <span class="rounded-full circular-gradient px-7 py-5 font-bold text-lg shadow fise-arrow">Idea <span class="block text-xs font-medium opacity-70">解決策</span></span>
+          <span class="rounded-full circular-gradient px-7 py-5 font-bold text-lg shadow fise-arrow">Strategy <span class="block text-xs font-medium opacity-70">戦略立案</span></span>
+          <span class="rounded-full circular-gradient px-7 py-5 font-bold text-lg shadow">Execution <span class="block text-xs font-medium opacity-70">実行</span></span>
+        </div>
+      </div>
+      <p class="text-gray-700 text-center max-w-screen-md">PDCAを超える現代型学習サイクル。毎週の面談と日々の進捗管理の中でこのサイクルを何度も繰り返し、根本から課題解決力と目標達成力を育てます。</p>
+    </div>
+  </section>
+
+  <!-- 講師陣サマリー -->
+  <section id="instructors" class="container mx-auto py-14 px-4 fade-in">
+    <h2 class="text-2xl md:text-3xl font-bold text-blue-900 text-center mb-8">医学部生講師陣による最先端指導</h2>
+    <div class="flex flex-wrap justify-center gap-8 mb-6">
+      <div class="rounded-2xl bg-white p-5 shadow flex flex-col items-center w-64">
+        <img src="https://randomuser.me/api/portraits/women/80.jpg" alt="宗像桃華" class="w-24 h-24 rounded-full border-4 border-blue-200 mb-3 object-cover">
+        <div class="font-bold text-blue-900">宗像 桃華</div>
+        <div class="text-xs text-gray-500 mb-1">広島大学医学部医学科</div>
+        <p class="text-sm text-gray-700 text-center">科学・英語・物理を得意分野に、「自分に合う勉強法発見」をサポート。</p>
+      </div>
+      <div class="rounded-2xl bg-white p-5 shadow flex flex-col items-center w-64">
+        <img src="https://randomuser.me/api/portraits/men/81.jpg" alt="良宇都那玲主" class="w-24 h-24 rounded-full border-4 border-blue-200 mb-3 object-cover">
+        <div class="font-bold text-blue-900">良宇都 那玲主</div>
+        <div class="text-xs text-gray-500 mb-1">広島大学医学部医学科</div>
+        <p class="text-sm text-gray-700 text-center">数学・理系全般を徹底分析！「努力は将来への投資」</p>
+      </div>
+      <div class="rounded-2xl bg-white p-5 shadow flex flex-col items-center w-64">
+        <img src="https://randomuser.me/api/portraits/men/82.jpg" alt="加藤朋" class="w-24 h-24 rounded-full border-4 border-blue-200 mb-3 object-cover">
+        <div class="font-bold text-blue-900">加藤 朋</div>
+        <div class="text-xs text-gray-500 mb-1">広島大学医学部医学科</div>
+        <p class="text-sm text-gray-700 text-center">英数物化全対応。「再現性が高い学び方」の伝道師。</p>
+      </div>
+      <div class="rounded-2xl bg-white p-5 shadow flex flex-col items-center w-64">
+        <img src="https://randomuser.me/api/portraits/women/84.jpg" alt="石川こひめ" class="w-24 h-24 rounded-full border-4 border-blue-200 mb-3 object-cover">
+        <div class="font-bold text-blue-900">石川 こひめ</div>
+        <div class="text-xs text-gray-500 mb-1">広島大学医学部医学科</div>
+        <p class="text-sm text-gray-700 text-center">「正しく要領よく」成績UP。研究/楽器/多彩な体験を活かす。</p>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="#instructors" class="inline-block px-7 py-3 rounded-full font-bold bg-blue-100 hover:bg-blue-300 transition text-blue-900 mt-3 shadow-sm">講師陣をもっと見る</a>
+    </div>
+  </section>
+
+  <!-- 料金プラン -->
+  <section id="price" class="py-14 bg-gradient-to-b from-white via-blue-50 to-white fade-in">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900 text-center mb-8">料金プラン</h2>
+      <div class="flex flex-col md:flex-row gap-8 justify-center items-stretch">
+        <div class="bg-white rounded-2xl shadow-lg p-8 flex-1 max-w-lg flex flex-col items-center">
+          <div class="text-lg font-bold text-blue-900 mb-2">通常プラン</div>
+          <div class="text-2xl font-black text-blue-700 mb-2">35,000円<span class="text-base font-medium text-gray-500"> / 月</span></div>
+          <ul class="text-gray-700 text-sm mb-6 list-disc ml-4 space-y-1">
+            <li>平日朝～夜まで自習室利用</li>
+            <li>質問対応＆ミニ面談</li>
+            <li>学習手帳で進捗管理</li>
+            <li>補食サービス利用可</li>
+          </ul>
+          <a href="#price" class="bg-blue-500 text-white rounded-full font-bold px-6 py-2 transition hover:bg-blue-700">料金詳細を見る</a>
+        </div>
+        <div class="bg-blue-900 rounded-2xl shadow-lg p-8 flex-1 max-w-lg flex flex-col items-center text-white">
+          <div class="text-lg font-bold mb-2">個別コンサルプラン</div>
+          <div class="text-2xl font-black mb-2">45,000円<span class="text-base font-medium text-blue-100"> / 月</span></div>
+          <ul class="text-blue-100 text-sm mb-6 list-disc ml-4 space-y-1">
+            <li>週次・月次の徹底面談</li>
+            <li>進捗・課題データ管理</li>
+            <li>LINEサポート＆パーソナル指導</li>
+            <li>通常プラン全サービス込み</li>
+          </ul>
+          <a href="#price" class="bg-white text-blue-900 rounded-full font-bold px-6 py-2 transition hover:bg-blue-200">料金詳細を見る</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 入塾フロー -->
+  <section id="flow" class="container mx-auto py-14 px-4 fade-in">
+    <h2 class="text-2xl md:text-3xl font-bold text-blue-900 text-center mb-10">入塾までの流れ</h2>
+    <div class="flex flex-col md:flex-row gap-8 items-center justify-center">
+      <div class="flex flex-col items-center w-full md:w-1/3">
+        <div class="w-20 h-20 flex items-center justify-center bg-blue-100 rounded-full shadow mb-3">
+          <i class="fas fa-envelope-open-text fa-2x text-blue-700"></i>
+        </div>
+        <span class="mb-2 font-bold">STEP 1</span>
+        <span class="font-semibold mb-1 text-blue-900">無料体験・相談</span>
+        <p class="text-gray-600 text-center text-sm">まずは気軽にお問い合わせや無料体験で教室の雰囲気を体感してください。</p>
+      </div>
+      <div class="flex flex-col items-center w-full md:w-1/3">
+        <div class="w-20 h-20 flex items-center justify-center bg-blue-100 rounded-full shadow mb-3">
+          <i class="fas fa-comments fa-2x text-blue-700"></i>
+        </div>
+        <span class="mb-2 font-bold">STEP 2</span>
+        <span class="font-semibold mb-1 text-blue-900">ヒアリング</span>
+        <p class="text-gray-600 text-center text-sm">目標や課題、生活リズム、部活との両立など丁寧にヒアリング。</p>
+      </div>
+      <div class="flex flex-col items-center w-full md:w-1/3">
+        <div class="w-20 h-20 flex items-center justify-center bg-blue-100 rounded-full shadow mb-3">
+          <i class="fas fa-route fa-2x text-blue-700"></i>
+        </div>
+        <span class="mb-2 font-bold">STEP 3</span>
+        <span class="font-semibold mb-1 text-blue-900">プラン提案</span>
+        <p class="text-gray-600 text-center text-sm">あなたに最適な学習プランをご提案し、納得してから入塾スタート！</p>
+      </div>
+    </div>
+    <div class="text-center mt-12">
+      <a href="#contact" class="px-10 py-3 rounded-full bg-blue-600 text-white font-bold shadow-lg text-lg transition hover:bg-blue-700">まずは無料体験</a>
+    </div>
+  </section>
+
+  <!-- アクセス/フッター -->
+  <footer id="access" class="bg-blue-800 text-gray-100 pt-12 pb-6">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row md:justify-between md:items-center mb-8">
+      <div class="flex items-center mb-8 md:mb-0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Medical_Icon_MedZero.svg" alt="MedicalZeroロゴ" class="h-10 w-10 rounded-full bg-blue-100 mr-3 object-contain" onerror="this.src='https://dummyimage.com/80x80/1960A0/fff.png&text=MZ';">
+        <span class="font-bold text-lg text-white">メディカルゼロ</span>
+      </div>
+      <div class="mb-8 md:mb-0">
+        <div class="font-bold mb-1">住所</div>
+        <span>広島市中区（詳細は体験時にご案内）</span>
+        <div class="font-bold mt-2 mb-1">連絡先</div>
+        <span><i class="fas fa-phone mr-1"></i>080-3886-1480</span><br>
+        <span><i class="fas fa-envelope mr-1"></i>jinishiyama1216@gmail.com</span>
+      </div>
+      <div class="flex flex-col space-y-2 md:items-end">
+        <a href="index.html" class="hover:underline">ホーム</a>
+        <a href="characteristics.html" class="hover:underline">特徴</a>
+        <a href="solution.html" class="hover:underline">解決策</a>
+        <a href="difference.html" class="hover:underline">他塾との違い</a>
+        <a href="teacher.html" class="hover:underline">講師紹介</a>
+        <a href="story.html" class="hover:underline">ストーリー</a>
+        <a href="cost.html" class="hover:underline">料金・コース</a>
+        <a href="faq.html" class="hover:underline">アクセス・お問い合わせ</a>
+      </div>
+    </div>
+    <div class="text-center text-sm text-blue-200 opacity-80">&copy; 2024 メディカルゼロ. All rights reserved.</div>
+  </footer>
+
+  <!-- Dummy Contact Anchor -->
+  <div id="contact"></div>
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menuBtn').onclick = function() {
+      document.getElementById('mobileNav').classList.remove('hidden');
+    }
+    function closeNav() {
+      document.getElementById('mobileNav').classList.add('hidden');
+    }
+    // Animate on scroll
+    document.addEventListener('DOMContentLoaded', function(){
+      const faders = document.querySelectorAll('.fade-in');
+      function isInViewport(e) {
+        const rect = e.getBoundingClientRect();
+        return rect.top <= window.innerHeight-20 && rect.bottom >= 0;
+      }
+      function animateItems() {
+        faders.forEach(e=>{
+          if (isInViewport(e)) e.classList.add('opacity-100'); else e.classList.remove('opacity-100');
+        });
+      }
+      window.addEventListener('scroll', animateItems);
+      animateItems(); // initial
+    });
+  </script>
+</body>
+</html>
+

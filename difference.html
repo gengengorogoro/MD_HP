@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>他塾との違い | メディカルゼロ | 思考力と習慣を鍛える成長特化型コーチング学習塾</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" rel="stylesheet">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <style>
+    body {
+      font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+      background: #f8fafc;
+      color: #22223b;
+    }
+    .nav-link { transition: color 0.2s; }
+    .nav-link:hover { color: #2563eb; }
+    .fa-check-circle {
+      color: #2563eb;
+    }
+    .comparison-table th, .comparison-table td { vertical-align: middle; }
+    .accordion-button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      padding: 0.75rem 0;
+      font-weight: 700;
+      color: #374151;
+      transition: color 0.2s;
+    }
+    .accordion-button:hover {
+      color: #2563eb;
+    }
+    .accordion-body {
+      padding-bottom: 1rem;
+      color: #4b5563;
+    }
+    .highlight {
+      color: #2563eb;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-4 md:px-10">
+      <div class="flex items-center">
+        <img src="https://page.genspark.site/v1/base64_upload/d6b58628397ee062ae2d3d082b48c6d9" alt="MedicalZeroロゴ" class="h-10 w-10 mr-3 rounded-full bg-white border border-gray-200">
+        <span class="text-2xl font-bold tracking-widest text-gray-800">メディカルゼロ</span>
+      </div>
+      <nav class="hidden md:flex space-x-7 text-base font-medium">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">ホーム</a>
+        <a href="characteristics.html" class="text-gray-700 hover:text-blue-600 font-medium transition">特徴</a>
+        <a href="solution.html" class="text-gray-700 hover:text-blue-600 font-medium transition">解決策</a>
+        <a href="difference.html" class="text-gray-700 hover:text-blue-600 font-medium transition">他塾との違い</a>
+        <a href="teacher.html" class="text-gray-700 hover:text-blue-600 font-medium transition">講師紹介</a>
+        <a href="story.html" class="text-gray-700 hover:text-blue-600 font-medium transition">ストーリー</a>
+        <a href="cost.html" class="text-gray-700 hover:text-blue-600 font-medium transition">料金・コース</a>
+        <a href="faq.html" class="text-gray-700 hover:text-blue-600 font-medium transition">アクセス・お問い合わせ</a>
+      </nav>
+      <a href="#" class="ml-6 px-5 py-2 bg-blue-600 text-white font-bold rounded-md hover:bg-blue-700 shadow transition">無料体験申し込み</a>
+    </div>
+  </header>
+
+  <!-- Main Visual -->
+  <section class="relative bg-blue-600 text-white py-16 px-4 md:px-0">
+    <div class="container mx-auto flex flex-col items-center">
+      <h1 class="text-3xl md:text-5xl font-extrabold mb-4 tracking-widest text-center drop-shadow-lg">メディカルゼロと他塾との違い</h1>
+      <p class="text-lg md:text-2xl font-semibold mb-2">なぜ私たちは<span class="highlight">"教えない"</span>を選んだのか</p>
+      <div class="w-full md:w-2/3 lg:w-1/2 mb-4">
+        <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80" alt="塾の比較ビジュアル" class="w-full rounded-xl shadow-lg object-cover h-48 md:h-64" loading="lazy">
+      </div>
+      <span class="block text-lg md:text-2xl mt-4 font-medium text-center">思考力と自走力を育てる、新しい学習塾のカタチ</span>
+    </div>
+  </section>
+
+  <!-- イントロダクション -->
+  <section class="container mx-auto py-12 px-4 md:px-0">
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-4 text-blue-700">学習塾選びで大切なのは<span class="highlight">"あなたに合うかどうか"</span></h2>
+    <p class="text-gray-700 text-base max-w-3xl mx-auto text-center mb-4">
+      塾を選ぶとき、「立地が良い」「費用が安い」「合格実績がある」など条件だけで選んでいませんか？<br>
+      しかし本当に重要なのは「<span class="highlight">あなた自身の成長を最大化できるかどうか</span>」です。<br>
+      メディカルゼロは「教えない・引き出す」という独自の理念で、あなたの<span class="highlight">未来の成長</span>にコミットします。<br>
+      ぜひ、内容・仕組みの違いまで比較してください。
+    </p>
+  </section>
+
+  <!-- 塾タイプ比較表 -->
+  <section class="container mx-auto py-8 px-2 md:px-0">
+    <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-5 text-center">主要な3タイプの塾を徹底比較</h3>
+    <div class="overflow-x-auto">
+      <table class="comparison-table min-w-full table-auto border border-gray-200 rounded-xl text-sm shadow-lg whitespace-nowrap bg-white">
+        <thead>
+          <tr class="bg-gray-50">
+            <th class="py-3 px-4 border-b border-gray-200"></th>
+            <th class="py-3 px-4 border-b border-gray-200 text-blue-700 font-semibold w-44">大手予備校<br><span class="text-xs text-gray-500">(東進・河合塾・駿台等)</span></th>
+            <th class="py-3 px-4 border-b border-gray-200 text-yellow-700 font-semibold w-44">個別指導塾<br><span class="text-xs text-gray-500">(明光義塾・トライ等)</span></th>
+            <th class="py-3 px-4 border-b border-gray-200 text-green-700 font-semibold w-44">メディカルゼロ</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-700">
+          <tr>
+            <td class="py-2 px-3 font-bold bg-gray-50">学習スタイル</td>
+            <td class="py-2 px-3 text-center">集団型</td>
+            <td class="py-2 px-3 text-center">個別型</td>
+            <td class="py-2 px-3 text-center font-semibold text-green-900">コーチング型</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="py-2 px-3 font-bold">指導方法</td>
+            <td class="py-2 px-3 text-center">講義型</td>
+            <td class="py-2 px-3 text-center">教える型</td>
+            <td class="py-2 px-3 text-center font-semibold text-green-900">引き出す型</td>
+          </tr>
+          <tr>
+            <td class="py-2 px-3 font-bold bg-gray-50">講師の特徴</td>
+            <td class="py-2 px-3 text-center">専門講師</td>
+            <td class="py-2 px-3 text-center">アルバイト講師</td>
+            <td class="py-2 px-3 text-center font-semibold text-green-900">医学部生コーチ</td>
+          </tr>
+          <tr>
+            <td class="py-2 px-3 font-bold bg-gray-50">自習環境</td>
+            <td class="py-2 px-3 text-center">大人数・一部騒がしい</td>
+            <td class="py-2 px-3 text-center">小人数・可変</td>
+            <td class="py-2 px-3 text-center font-semibold text-green-900">静音・集中・朝夜まで</td>
+          </tr>
+          <tr>
+            <td class="py-2 px-3 font-bold bg-gray-50">料金体系</td>
+            <td class="py-2 px-3 text-center">定額制</td>
+            <td class="py-2 px-3 text-center">授業数制</td>
+            <td class="py-2 px-3 text-center font-semibold text-green-900">明瞭なプラン制</td>
+          </tr>
+          <tr>
+            <td class="py-2 px-3 font-bold bg-gray-50">学習管理</td>
+            <td class="py-2 px-3 text-center">テスト管理</td>
+            <td class="py-2 px-3 text-center">出席管理</td>
+            <td class="py-2 px-3 text-center font-semibold text-green-900">習慣化サポート</td>
+          </tr>
+          <tr>
+            <td class="py-2 px-3 font-bold bg-gray-50">習慣化の仕組み</td>
+            <td class="py-2 px-3 text-center">なし</td>
+            <td class="py-2 px-3 text-center">やや支援</td>
+            <td class="py-2 px-3 text-center font-semibold text-green-900">徹底サポート</td>
+          </tr>
+          <tr>
+            <td class="py-2 px-3 font-bold bg-gray-50">思考力育成</td>
+            <td class="py-2 px-3 text-center">知識重視</td>
+            <td class="py-2 px-3 text-center">解法重視</td>
+            <td class="py-2 px-3 text-center font-semibold text-green-900">思考重視</td>
+          </tr>
+          <tr>
+            <td class="py-2 px-3 font-bold bg-gray-50">個別最適化</td>
+            <td class="py-2 px-3 text-center">全員同じ</td>
+            <td class="py-2 px-3 text-center">部分的最適化</td>
+            <td class="py-2 px-3 text-center font-semibold text-green-900">完全最適化</td>
+          </tr>
+          <tr>
+            <td class="py-2 px-3 font-bold bg-gray-50">時間効率</td>
+            <td class="py-2 px-3 text-center">長時間学習重視</td>
+            <td class="py-2 px-3 text-center">やや考慮</td>
+            <td class="py-2 px-3 text-center font-semibold text-green-900">徹底効率化</td>
+          </tr>
+          <tr>
+            <td class="py-2 px-3 font-bold bg-gray-50">伴走支援</td>
+            <td class="py-2 px-3 text-center">ほぼなし</td>
+            <td class="py-2 px-3 text-center">講師次第</td>
+            <td class="py-2 px-3 text-center font-semibold text-green-900">専属コーチ制</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- メディカルゼロだけの強み -->
+  <section class="container mx-auto py-14 px-4 md:px-0">
+    <h3 class="text-2xl md:text-3xl font-bold text-center mb-8 text-blue-700">メディカルゼロだけの<strong class="highlight">圧倒的な強み</strong></h3>
+    <div class="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
+      <!-- 強み1 -->
+      <div class="bg-white rounded-xl shadow p-7 flex flex-col items-start">
+        <span class="text-2xl mb-2 text-blue-600"><i class="fas fa-brain"></i></span>
+        <h4 class="font-bold text-lg mb-1">教えない・引き出す指導法</h4>
+        <ul class="list-disc ml-4 text-sm space-y-1">
+          <li>「解答を教える」ではなく「考えるプロセスを育てる」</li>
+          <li>「なぜ？」「他の視点は？」など思考を刺激する問いかけ</li>
+          <li>成長を加速させる問いかけの具体例で深く導く</li>
+        </ul>
+      </div>
+      <!-- 強み2 -->
+      <div class="bg-white rounded-xl shadow p-7 flex flex-col items-start">
+        <span class="text-2xl mb-2 text-yellow-500"><i class="fas fa-user-graduate"></i></span>
+        <h4 class="font-bold text-lg mb-1">医学部生による専属コーチ制</h4>
+        <ul class="list-disc ml-4 text-sm space-y-1">
+          <li>高度な専門知識・成功体験を共有できる講師陣</li>
+          <li>1対1の伴走型サポートで目標達成まで徹底支援</li>
+          <li>受験だけでなく思考法や学習習慣まで多角的に指導</li>
+        </ul>
+      </div>
+      <!-- 強み3 -->
+      <div class="bg-white rounded-xl shadow p-7 flex flex-col items-start">
+        <span class="text-2xl mb-2 text-green-600"><i class="fas fa-seedling"></i></span>
+        <h4 class="font-bold text-lg mb-1">科学的な習慣化サポート</h4>
+        <ul class="list-disc ml-4 text-sm space-y-1">
+          <li>週次面談と日報管理で挫折しない学び</li>
+          <li>モチベーション管理・自己効力感の向上テクニック</li>
+          <li>習慣形成と自走力育成を連動させるプログラム</li>
+        </ul>
+      </div>
+      <!-- 強み4 -->
+      <div class="bg-white rounded-xl shadow p-7 flex flex-col items-start">
+        <span class="text-2xl mb-2 text-pink-500"><i class="fas fa-dumbbell"></i></span>
+        <h4 class="font-bold text-lg mb-1">文武両立のための時間設計</h4>
+        <ul class="list-disc ml-4 text-sm space-y-1">
+          <li>部活動・学校行事と学習の両立を可能にする設計</li>
+          <li>忙しい中でも最大限の学習効率を実現</li>
+          <li>補食サービスで集中力・コンディションを維持</li>
+        </ul>
+      </div>
+      <!-- 強み5 -->
+      <div class="bg-white rounded-xl shadow p-7 flex flex-col items-start">
+        <span class="text-2xl mb-2 text-purple-600"><i class="fas fa-star"></i></span>
+        <h4 class="font-bold text-lg mb-1">思考力と自走力の育成</h4>
+        <ul class="list-disc ml-4 text-sm space-y-1">
+          <li>暗記・反復ではなく「考える力」にフォーカス</li>
+          <li>自己分析力・問題解決力を徹底育成</li>
+          <li>受験後も役立つ「生涯の学習スキル」を習得</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 学習成果の違い -->
+  <section class="container mx-auto py-12 px-4 md:px-0">
+    <h3 class="text-xl md:text-2xl font-bold text-center text-blue-700 mb-8">結果の出方が違います</h3>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-10">
+      <div class="flex-1 w-full max-w-sm py-4">
+        <canvas id="resultChart"></canvas>
+      </div>
+      <div class="flex-1 max-w-lg">
+        <ul class="list-disc text-gray-700 pl-5 mb-3">
+          <li><span class="font-semibold">短期</span>：「直近のテスト・模試での得点アップ」だけで終わらない</li>
+          <li><span class="font-semibold">長期</span>：「自分で課題を見つけて考え抜く力」を数年単位で育成</li>
+          <li>受験対策＋将来の自己成長にも有効な本質的学び</li>
+        </ul>
+        <p class="text-blue-700 font-semibold">短期的な点数向上だけでなく、<br>長期的な思考力・自走力の向上を重視しています。</p>
+      </div>
+    </div>
+    <div class="bg-gray-100 rounded-xl p-6 max-w-2xl mx-auto shadow text-gray-700">
+      <strong>【成果事例（匿名）】</strong><br>
+      ―<br>
+      高2・男子（文武両道層）：入塾後半年で自習習慣が身につき、偏差値48→60を達成<br>
+      高1・女子（勉強迷子層）：毎日の行動記録と習慣化により模試E→B判定、志望大学合格<br>
+      高3・男子（高自走層）：志望校別カスタム戦略で「頭打ち」から一段上の早慶合格へ
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var ctx = document.getElementById('resultChart').getContext('2d');
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ['入塾前', '入塾1ヶ月', '3ヶ月', '6ヶ月', '受験直前'],
+            datasets: [
+              {
+                label: '従来型塾',
+                data: [40, 45, 50, 54, 57],
+                borderColor: '#ddd',
+                backgroundColor: 'rgba(200,200,200,0.1)',
+                fill: false,
+                borderWidth: 3,
+                pointRadius: 4,
+                tension: 0.1
+              },
+              {
+                label: 'メディカルゼロ',
+                data: [40, 48, 55, 62, 67],
+                borderColor: '#2563eb',
+                backgroundColor: 'rgba(59,130,246,0.12)',
+                fill: false,
+                borderWidth: 3,
+                pointRadius: 5,
+                tension: 0.4
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: { display: true, position: 'bottom' }
+            },
+            scales: {
+              y: { beginAtZero: false, suggestedMin: 30, suggestedMax: 80 }
+            }
+          }
+        });
+      });
+    </script>
+  </section>
+
+  <!-- よくある誤解 -->
+  <section class="container mx-auto py-10 px-4 md:px-0">
+    <h3 class="text-xl md:text-2xl font-bold mb-7 text-center text-blue-700">メディカルゼロについてよくある誤解</h3>
+    <div class="max-w-3xl mx-auto">
+      <div class="border-b">
+        <div class="accordion-button" onclick="toggleAccordion(1)">
+          <span>【誤解1】「教えない」とは放置することではない</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="accordion-body hidden" id="acc1">
+          実際には「最も手厚く伴走するコーチング」です。<br>
+          「引き出す」ための対話や技術を徹底化。質問・面談・計画設計で一人に寄り添い、成長を最大化させます。
+        </div>
+      </div>
+      <div class="border-b">
+        <div class="accordion-button" onclick="toggleAccordion(2)">
+          <span>【誤解2】医学部生だから医学部志望者向けではない</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="accordion-body hidden" id="acc2">
+          あらゆる志望校・レベルの生徒に対応可能。難関大合格者だからこそ「全レベルの学習戦略・ノウハウ」を還元。志望校に合わせた戦略設定・指導を柔軟に行います。
+        </div>
+      </div>
+      <div class="border-b">
+        <div class="accordion-button" onclick="toggleAccordion(3)">
+          <span>【誤解3】高いレベルの生徒向けではない</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="accordion-body hidden" id="acc3">
+          完全個別最適化だからこそ基礎から対応可能。勉強習慣のない生徒や「伸び悩み」の生徒にも、徹底したサポートで「自分らしい成長」を実現できます。
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleAccordion(num) {
+        for (let i = 1; i <= 3; i++) {
+          if (i === num) {
+            const panel = document.getElementById('acc' + num);
+            panel.classList.toggle('hidden');
+          } else {
+            document.getElementById('acc' + i).classList.add('hidden');
+          }
+        }
+      }
+    </script>
+  </section>
+
+  <!-- 生徒と保護者の声 -->
+  <section class="container mx-auto py-12 px-4 md:px-0">
+    <h3 class="text-xl md:text-2xl font-bold text-center text-blue-700 mb-8">他の塾から転塾した生徒・保護者の声</h3>
+    <div class="grid md:grid-cols-2 gap-7 max-w-3xl mx-auto">
+      <blockquote class="bg-white rounded-xl p-7 shadow border-l-4 border-blue-500">
+        <p class="mb-2 text-gray-700">○○塾では質問がしにくく、教えられるだけだったのが、メディカルゼロでは先生と一緒に「なぜそう考えるのか？」まで深く掘り下げ、理解度が格段にアップしました。</p>
+        <footer class="flex items-center mt-2 gap-3">
+          <i class="fas fa-user-graduate text-blue-700"></i>
+          <span class="text-gray-600 text-sm">高校2年男子・保護者</span>
+        </footer>
+      </blockquote>
+      <blockquote class="bg-white rounded-xl p-7 shadow border-l-4 border-green-500">
+        <p class="mb-2 text-gray-700">個別指導塾で成績が伸び悩んでいましたが、週次面談での習慣管理と個別課題設計でモチベーションも維持でき、本当に勉強が楽しくなりました。</p>
+        <footer class="flex items-center mt-2 gap-3">
+          <i class="fas fa-user text-green-700"></i>
+          <span class="text-gray-600 text-sm">高校1年女子</span>
+        </footer>
+      </blockquote>
+      <blockquote class="bg-white rounded-xl p-7 shadow border-l-4 border-yellow-500">
+        <p class="mb-2 text-gray-700">大手予備校では集団授業についていけなかった息子が、ここでは自分のペースで確実にステップアップできています。</p>
+        <footer class="flex items-center mt-2 gap-3">
+          <i class="fas fa-user-tie text-yellow-600"></i>
+          <span class="text-gray-600 text-sm">高校3年男子・保護者</span>
+        </footer>
+      </blockquote>
+      <blockquote class="bg-white rounded-xl p-7 shadow border-l-4 border-purple-500">
+        <p class="mb-2 text-gray-700">「教えない」と聞いて不安でしたが、むしろ手厚いサポートで自信と考える力がつき、将来に役立つ学びだと体感しています。</p>
+        <footer class="flex items-center mt-2 gap-3">
+          <i class="fas fa-female text-purple-500"></i>
+          <span class="text-gray-600 text-sm">高3女子</span>
+        </footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- 選ぶべき理由 -->
+  <section class="container mx-auto py-10 px-4 md:px-0">
+    <h3 class="text-xl md:text-2xl font-bold text-blue-700 mb-6 text-center">メディカルゼロを選ぶべき理由</h3>
+    <ul class="max-w-2xl mx-auto list-none space-y-3 text-lg">
+      <li><i class="fas fa-check-circle mr-2"></i>一人ひとりに合った<span class="highlight">学習戦略・習慣設計</span>が受けられる</li>
+      <li><i class="fas fa-check-circle mr-2"></i><span class="highlight">専属コーチ制</span>で成果まで徹底伴走サポート</li>
+      <li><i class="fas fa-check-circle mr-2"></i><span class="highlight">部活と勉強を両立</span>したい生徒への最先端メソッド</li>
+      <li><i class="fas fa-check-circle mr-2"></i>自分の<span class="highlight">思考力・自走力</span>を徹底的に伸ばしたい生徒</li>
+      <li><i class="fas fa-check-circle mr-2"></i>「教えられる」から「考える」自分に変わりたい生徒</li>
+    </ul>
+    <div class="max-w-2xl mx-auto mt-6 mb-2 text-gray-700 text-center text-base">
+      <span>特に次のような生徒に最適です：</span>
+      <ul class="list-disc text-left ml-7 mt-1 text-sm text-gray-700">
+        <li>部活動も学業も全力でやりたい</li>
+        <li>自習や習慣がどうしても続かない</li>
+        <li>模試や成績が停滞している</li>
+        <li>大人数の塾・集団が苦手</li>
+        <li>将来に役立つ自分で考える力をつけたい</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- コストパフォーマンス -->
+  <section class="container mx-auto py-12 px-4 md:px-0">
+    <h3 class="text-xl md:text-2xl font-bold text-center text-blue-700 mb-12">投資対効果から見た比較</h3>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+      <div class="flex-1 shadow bg-white rounded-xl p-6">
+        <table class="min-w-full mb-3 text-sm">
+          <thead>
+            <tr>
+              <th class="py-2 px-3 font-semibold text-blue-700">塾タイプ</th>
+              <th class="py-2 px-3 font-semibold">月額費用目安</th>
+              <th class="py-2 px-3 font-semibold">主なサポート内容</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="py-2 px-3 text-center">大手予備校</td>
+              <td class="py-2 px-3 text-center">￥40,000〜￥80,000</td>
+              <td class="py-2 px-3 text-sm">授業・テスト管理が中心。個別最適化は少なめ</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="py-2 px-3 text-center">個別指導塾</td>
+              <td class="py-2 px-3 text-center">￥30,000〜￥70,000</td>
+              <td class="py-2 px-3 text-sm">個別対応だが授業格差・学習計画は限定的</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-3 text-center font-bold text-green-700">メディカルゼロ</td>
+              <td class="py-2 px-3 text-center font-bold">￥35,000〜￥45,000</td>
+              <td class="py-2 px-3 text-sm">習慣化・伴走・完全最適化＆思考力指導・食事サポートも</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="mt-2 text-gray-600 text-sm">
+          <i class="fas fa-exclamation-triangle mr-2 text-yellow-500"></i>
+          <strong>表面的な料金</strong>だけでなく、実際に得られる<span class="highlight">価値・サポート</span>を比較してください。
+        </div>
+      </div>
+      <div class="flex-1 max-w-sm py-3">
+        <canvas id="costChart"></canvas>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var ctx2 = document.getElementById('costChart').getContext('2d');
+        new Chart(ctx2, {
+          type: 'bar',
+          data: {
+            labels: ['大手予備校', '個別指導塾', 'メディカルゼロ'],
+            datasets: [{
+              label: '満足度（10点満点スケール/生徒アンケート）',
+              data: [6.5, 7.2, 9.5],
+              backgroundColor: [
+                'rgba(59,130,246,0.11)',
+                'rgba(253,224,71,0.15)',
+                'rgba(52,211,153,0.15)'
+              ],
+              borderColor: [
+                '#2563eb', '#fbbf24', '#10b981'
+              ],
+              borderWidth: 4,
+              borderRadius: 9
+            }]
+          },
+          options: {
+            responsive: true,
+            indexAxis: 'y',
+            plugins: {
+              legend: { display: false }
+            },
+            scales: {
+              x: { min: 0, max: 10, ticks: { stepSize: 1 } }
+            }
+          }
+        });
+      });
+    </script>
+  </section>
+
+  <!-- CTAセクション -->
+  <section class="container mx-auto py-14 px-4 md:px-0">
+    <div class="rounded-xl shadow-lg bg-blue-600 text-white text-center p-7 max-w-2xl mx-auto">
+      <h3 class="text-2xl md:text-3xl font-bold mb-3">ぜひ一度、体験してみてください</h3>
+      <p class="mb-3 text-lg">他の塾との違いを<strong class="highlight">実際に体感する</strong>ことが何よりも確かな比較になります。</p>
+      <a href="#" class="inline-block mt-4 px-7 py-3 font-bold text-lg bg-yellow-400 text-blue-800 rounded-md hover:bg-yellow-300 shadow transition">無料体験・相談する</a>
+      <p class="mt-6 text-base">体験授業までの流れ：<br>
+        <span class="text-white font-semibold">お問い合わせ → 見学体験予約 → 講師と個別ヒアリング → 無料体験受講</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-16 py-8">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+      <div class="flex items-center mb-5 md:mb-0">
+        <img src="https://page.genspark.site/v1/base64_upload/d6b58628397ee062ae2d3d082b48c6d9" alt="MedicalZeroロゴ" class="h-8 w-8 rounded-full bg-white border border-gray-200 mr-2">
+        <span class="font-bold text-gray-700 text-lg">メディカルゼロ</span>
+      </div>
+      <nav class="flex flex-wrap justify-center items-center text-sm gap-3 mb-4 md:mb-0">
+        <a href="index.html" class="hover:underline">ホーム</a>
+        <a href="characteristics.html" class="hover:underline">特徴</a>
+        <a href="solution.html" class="hover:underline">解決策</a>
+        <a href="difference.html" class="hover:underline">他塾との違い</a>
+        <a href="teacher.html" class="hover:underline">講師紹介</a>
+        <a href="story.html" class="hover:underline">ストーリー</a>
+        <a href="cost.html" class="hover:underline">料金・コース</a>
+        <a href="faq.html" class="hover:underline">アクセス・お問い合わせ</a>
+      </nav>
+      <div class="text-gray-500 text-xs text-center md:text-right">
+        広島市中区 <br> 電話：080-3886-1480 <br> メール：jinishiyama1216@gmail.com <br>
+        <span class="block mt-1">&copy; 2024 メディカルゼロ</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

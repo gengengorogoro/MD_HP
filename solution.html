@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>あなたにぴったりの解決策 | メディカルゼロ | 思考力と習慣を鍛える成長特化型コーチング学習塾</title>
+  <meta name="description" content="メディカルゼロが対応する4つのタイプ別解決策。文武両道層、勉強迷子層、高自走層、非集団適応層それぞれの悩みに対する具体的なアプローチと成功事例を紹介。あなたにぴったりの学習法が見つかります。">
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Montserrat', 'Noto Sans JP', sans-serif; background-color: #f9fafb; }
+    .section-bg {
+      background-image: linear-gradient(to right, #3293ce 0%, #86c1eb 100%), url('https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=1200&q=80');
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: multiply;
+    }
+    .type-icon { font-size: 2.3rem; }
+    .bg-type1 { background-color: #e5f3fa; }
+    .bg-type2 { background-color: #f9e6ed; }
+    .bg-type3 { background-color: #ecf9e6; }
+    .bg-type4 { background-color: #ece8fa; }
+    .before-after::before { content: "▶"; color: #36ade9; margin-right: 0.5em; }
+    .timeline-dot { width: 20px; height: 20px; background: #3293ce; border-radius: 50%; display: inline-block; margin-right: 12px; vertical-align:middle;}
+    @media (max-width: 640px) {
+      .type-card { flex-direction: column; }
+    }
+  </style>
+</head>
+<body class="text-gray-800 bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <img src="https://page.genspark.site/v1/base64_upload/d6b58628397ee062ae2d3d082b48c6d9" alt="MedicalZeroロゴ" class="h-10 w-10 rounded-full shadow">
+        <span class="text-2xl font-bold text-blue-700 tracking-tight" style="font-family:'Montserrat',sans-serif;">メディカルゼロ</span>
+      </div>
+      <nav class="hidden md:flex space-x-6 text-md">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">ホーム</a>
+        <a href="characteristics.html" class="text-gray-700 hover:text-blue-600 font-medium transition">特徴</a>
+        <a href="solution.html" class="text-gray-700 hover:text-blue-600 font-medium transition">解決策</a>
+        <a href="difference.html" class="text-gray-700 hover:text-blue-600 font-medium transition">他塾との違い</a>
+        <a href="teacher.html" class="text-gray-700 hover:text-blue-600 font-medium transition">講師紹介</a>
+        <a href="story.html" class="text-gray-700 hover:text-blue-600 font-medium transition">ストーリー</a>
+        <a href="cost.html" class="text-gray-700 hover:text-blue-600 font-medium transition">料金・コース</a>
+        <a href="faq.html" class="text-gray-700 hover:text-blue-600 font-medium transition">アクセス・お問い合わせ</a>
+      </nav>
+      <a href="#" class="ml-4 px-5 py-2 bg-blue-500 text-white rounded-full shadow hover:bg-blue-700 font-bold transition">無料体験申込</a>
+    </div>
+  </header>
+
+  <!-- Main Visual -->
+  <section class="section-bg text-white py-16">
+    <div class="max-w-3xl mx-auto px-5 text-center">
+      <h1 class="text-3xl sm:text-5xl font-extrabold mb-4 drop-shadow">あなたにぴったりの学習法が見つかる</h1>
+      <p class="text-lg sm:text-2xl mb-6 font-semibold drop-shadow">一人ひとりの状況に合わせた、オーダーメイドの解決策</p>
+      <div class="flex justify-center mt-8 space-x-6">
+        <i class="fas fa-trophy type-icon text-yellow-300"></i>
+        <i class="fas fa-question-circle type-icon text-pink-400"></i>
+        <i class="fas fa-rocket type-icon text-green-400"></i>
+        <i class="fas fa-user-shield type-icon text-purple-400"></i>
+      </div>
+      <p class="mt-8 text-xl font-bold bg-white bg-opacity-20 px-8 py-2 rounded-lg shadow-lg inline-block">どんな悩みも、必ず解決策があります。</p>
+    </div>
+  </section>
+
+  <!-- ターゲット層概要 -->
+  <section class="max-w-5xl mx-auto py-14 px-4">
+    <h2 class="text-2xl font-bold text-blue-800 text-center mb-6">メディカルゼロが対応する4つのタイプ</h2>
+    <p class="text-center text-lg mb-9">あなたはどのタイプに近いですか？<br class="sm:hidden">それぞれに最適なサポートをご用意しています。</p>
+    <div class="flex flex-wrap justify-between gap-x-4 gap-y-8 mb-10">
+      <!-- 文武両道層 -->
+      <div class="flex-1 min-w-[220px] type-card bg-type1 rounded-xl p-6 flex flex-col items-center shadow border hover:scale-105 transition" id="link-type1">
+        <i class="fas fa-trophy text-4xl text-yellow-400 mb-2"></i>
+        <div class="text-lg font-semibold text-blue-700">文武両道層</div>
+        <div class="mt-1 text-gray-800 text-sm text-center">部活も勉強も「どちらも諦めたくない」</div>
+        <a href="#type1" class="mt-3 px-3 py-1 bg-blue-100 text-blue-700 rounded-full font-semibold text-sm hover:bg-blue-300">詳しく見る</a>
+      </div>
+      <!-- 勉強迷子層 -->
+      <div class="flex-1 min-w-[220px] type-card bg-type2 rounded-xl p-6 flex flex-col items-center shadow border hover:scale-105 transition"  id="link-type2">
+        <i class="fas fa-question-circle text-4xl text-pink-400 mb-2"></i>
+        <div class="text-lg font-semibold text-pink-600">勉強迷子層</div>
+        <div class="mt-1 text-gray-800 text-sm text-center">「何から始めればいいか分からない」</div>
+        <a href="#type2" class="mt-3 px-3 py-1 bg-pink-100 text-pink-700 rounded-full font-semibold text-sm hover:bg-pink-300">詳しく見る</a>
+      </div>
+      <!-- 高自走層 -->
+      <div class="flex-1 min-w-[220px] type-card bg-type3 rounded-xl p-6 flex flex-col items-center shadow border hover:scale-105 transition" id="link-type3">
+        <i class="fas fa-rocket text-4xl text-green-400 mb-2"></i>
+        <div class="text-lg font-semibold text-green-600">高自走層</div>
+        <div class="mt-1 text-gray-800 text-sm text-center">「さらに上を目指したい」「自分を進化させたい」</div>
+        <a href="#type3" class="mt-3 px-3 py-1 bg-green-100 text-green-700 rounded-full font-semibold text-sm hover:bg-green-300">詳しく見る</a>
+      </div>
+      <!-- 非集団適応層 -->
+      <div class="flex-1 min-w-[220px] type-card bg-type4 rounded-xl p-6 flex flex-col items-center shadow border hover:scale-105 transition" id="link-type4">
+        <i class="fas fa-user-shield text-4xl text-purple-400 mb-2"></i>
+        <div class="text-lg font-semibold text-purple-700">非集団適応層</div>
+        <div class="mt-1 text-gray-800 text-sm text-center">「集団授業が苦手」「自分のペースで学びたい」</div>
+        <a href="#type4" class="mt-3 px-3 py-1 bg-purple-100 text-purple-700 rounded-full font-semibold text-sm hover:bg-purple-300">詳しく見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- タイプ１：文武両道層 -->
+  <section id="type1" class="py-12 px-4 bg-type1 rounded-xl max-w-4xl mx-auto mb-10 shadow-lg">
+    <h3 class="text-xl sm:text-2xl font-bold text-blue-700 mb-4 flex items-center"><i class="fas fa-trophy text-yellow-400 mr-3"></i>部活も勉強も、どちらも諦めたくない</h3>
+    <div class="mb-3 text-gray-800">【よくある悩み】</div>
+    <ul class="list-disc ml-6 mb-2 text-gray-700">
+      <li>部活で帰りが遅く、勉強時間が確保できない</li>
+      <li>毎日疲れて集中できないことが多い</li>
+      <li>週末も大会や練習など、予定がつまっている</li>
+      <li>効率のよい勉強法が見つからない</li>
+    </ul>
+    <div class="mb-2 text-gray-800 font-bold">【メディカルゼロの解決策】</div>
+    <ul class="ml-6 mb-3 text-gray-700">
+      <li>短時間高効率学習法！「朝・隙間時間」を活用</li>
+      <li>部活後の集中力維持：補食サービス（プロ厳選のおにぎりなど）</li>
+      <li>「疲労回復」×「脳活性化」戦略で科目毎のベストタイミング学習</li>
+      <li>週単位で小目標を設定し成功体験を積み上げる</li>
+      <li>週末も柔軟に対策、スケジュール管理を徹底サポート</li>
+    </ul>
+    <div class="mb-2 font-semibold text-blue-900">【ビフォーアフター】</div>
+    <div class="bg-white rounded-md p-2 shadow before-after mb-3">以前は…「疲れて全然勉強できなかった」<br>今は…「自分のベストタイミングを知り、短い時間でも集中して成果UP！」</div>
+    <div class="mb-2 font-semibold text-blue-900">【成功事例】</div>
+    <ul class="ml-6 mb-3 text-gray-700">
+      <li>「週5部活＋土日大会でも校内成績10位以内にUP」(高2男子)</li>
+      <li>「短期集中型で模試偏差値14UP」(高1女子)</li>
+    </ul>
+    <div class="mb-2 font-semibold text-blue-900">【こんな週間スケジュール例】</div>
+    <div class="overflow-x-auto">
+    <table class="w-full text-sm mt-1 border">
+      <thead>
+        <tr class="bg-blue-100 text-blue-800">
+          <th class="p-2">時刻</th>
+          <th class="p-2">月〜金</th>
+          <th class="p-2">土日</th>
+        </tr>
+      </thead>
+      <tbody class="text-gray-700">
+        <tr>
+          <td class="font-semibold p-2 bg-blue-50">朝</td>
+          <td>登校前15分集中学習/計画見直し</td>
+          <td>午前：軽く復習</td>
+        </tr>
+        <tr>
+          <td class="font-semibold p-2 bg-blue-50">放課後</td>
+          <td>部活、補食サービス＋勉強30分</td>
+          <td>大会・練習</td>
+        </tr>
+        <tr>
+          <td class="font-semibold p-2 bg-blue-50">夜</td>
+          <td>自習室・自宅で1科目集中学習</td>
+          <td>自由学習・振り返り</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="mt-3 text-sm text-blue-900 font-semibold">なぜメディカルゼロ？</div>
+    <div class="text-gray-700 mb-2">部活生の時間効率を最大化し、栄養補給でコンディションもサポート。パーソナル計画×逐次サポート×補食サービスで文武両立を徹底支援します！</div>
+  </section>
+
+  <!-- タイプ２：勉強迷子層 -->
+  <section id="type2" class="py-12 px-4 bg-type2 rounded-xl max-w-4xl mx-auto mb-10 shadow-lg">
+    <h3 class="text-xl sm:text-2xl font-bold text-pink-700 mb-4 flex items-center"><i class="fas fa-question-circle text-pink-400 mr-3"></i>何から始めたらいいか、わからない</h3>
+    <div class="mb-3 text-gray-800">【よくある悩み】</div>
+    <ul class="list-disc ml-6 mb-2 text-gray-700">
+      <li>勉強が続かない、挫折しがち</li>
+      <li>自分に合った勉強法が分からない</li>
+      <li>色々試したが成績が伸びない</li>
+      <li>モチベーションが続かず自己嫌悪になりがち</li>
+    </ul>
+    <div class="mb-2 text-gray-800 font-bold">【メディカルゼロの解決策】</div>
+    <ul class="ml-6 mb-3 text-gray-700">
+      <li>適性診断で「今の自分に合った学習法」を一緒に探す</li>
+      <li>小さな成功体験＆「できた！」実感で自己効力感UP</li>
+      <li>週次面談で定期的に目標・進捗をチェック＆褒める</li>
+      <li>「できるまで分解」したステップアップ学習計画</li>
+      <li>気持ちの波にも対応したメンタルサポート</li>
+    </ul>
+    <div class="mb-2 font-semibold text-pink-900">【ビフォーアフター】</div>
+    <div class="bg-white rounded-md p-2 shadow before-after mb-3">以前…「始めた勉強が長続きせず毎回挫折」<br>今…「自分で工夫して続ける工夫と楽しさを知り、着実に習慣が定着！」</div>
+    <div class="mb-2 font-semibold text-pink-900">【成功事例】</div>
+    <ul class="ml-6 mb-3 text-gray-700">
+      <li>「2週間で勉強習慣が定着し、自己管理が身についた」(高1女子)</li>
+      <li>「苦手科目も段階別に計画して半年で克服」(高2男子)</li>
+    </ul>
+    <div class="mb-2 font-semibold text-pink-900">【習慣化までの道のり（例）】</div>
+    <ul class="ml-4 space-y-3">
+      <li><span class="timeline-dot"></span>初回面談で自己分析＋適性診断→日々の目標設定</li>
+      <li><span class="timeline-dot"></span>学習記録と面談で「習慣化進捗表」に可視化</li>
+      <li><span class="timeline-dot"></span>週末ごと小目標を振り返り＋次週の計画修正</li>
+      <li><span class="timeline-dot"></span>達成度向上・自己承認反応を習得→持続の習慣へ！</li>
+    </ul>
+    <div class="mt-3 text-sm text-pink-900 font-semibold">なぜメディカルゼロ？</div>
+    <div class="mb-2 text-gray-700">全診断・面談・習慣化ノウハウを組み合わせ、「自分で選ぶ」意欲・行動力を丁寧に引き出します。どんな状態からでもゼロから変われるサポートが可能です。</div>
+  </section>
+
+  <!-- タイプ３：高自走層 -->
+  <section id="type3" class="py-12 px-4 bg-type3 rounded-xl max-w-4xl mx-auto mb-10 shadow-lg">
+    <h3 class="text-xl sm:text-2xl font-bold text-green-700 mb-4 flex items-center"><i class="fas fa-rocket text-green-400 mr-3"></i>基礎はできているが、さらに上を目指したい</h3>
+    <div class="mb-3 text-gray-800">【よくある悩み】</div>
+    <ul class="list-disc ml-6 mb-2 text-gray-700">
+      <li>成績があるレベルで頭打ちになっている</li>
+      <li>細かな疑問に答えてくれる存在がいない</li>
+      <li>最適な教材や戦略の選択に不安がある</li>
+      <li>チャレンジングな目標を達成したい</li>
+    </ul>
+    <div class="mb-2 text-gray-800 font-bold">【メディカルゼロの解決策】</div>
+    <ul class="ml-6 mb-3 text-gray-700">
+      <li>「自己進化」型学習！自習力の進化と戦略提案</li>
+      <li>専門的な質問もOK！医学部生講師だから応用力抜群</li>
+      <li>思考力トレーニングで深い理解と応用力をUP</li>
+      <li>定期的な戦略見直しで「停滞」を打破</li>
+      <li>志望校別×弱点強化カリキュラムで個別突破</li>
+    </ul>
+    <div class="mb-2 font-semibold text-green-900">【ビフォーアフター】</div>
+    <div class="bg-white rounded-md p-2 shadow before-after mb-3">以前…「学校成績はまずまず、模試で伸び悩み…」<br>今…「苦手弱点を継続的につぶし、都度成長を実感！模試A判定獲得へ」</div>
+    <div class="mb-2 font-semibold text-green-900">【成功事例】</div>
+    <ul class="ml-6 mb-3 text-gray-700">
+      <li>「質の高い自習＋月1分析面談で難関国立大合格」(高3男子)</li>
+      <li>「質問＆戦略見直しで得点ゾーン突破」(高2女子)</li>
+    </ul>
+    <div class="mb-2 font-semibold text-green-900">【質の高い自習】</div>
+    <ul class="list-disc ml-8">
+      <li>目標ごとの自習戦略設計</li>
+      <li>アウトプット重視の学習バランス</li>
+      <li>疑問を放置しない質問体制</li>
+    </ul>
+    <div class="mt-3 text-sm text-green-900 font-semibold">なぜメディカルゼロ？</div>
+    <div class="mb-2 text-gray-700">自習を「進化型自己鍛錬」の場として格上げし、困った時もいつでもコーチに相談できる体制。高みを目指す全力支援を約束します。</div>
+  </section>
+
+  <!-- タイプ４：非集団適応層 -->
+  <section id="type4" class="py-12 px-4 bg-type4 rounded-xl max-w-4xl mx-auto mb-10 shadow-lg">
+    <h3 class="text-xl sm:text-2xl font-bold text-purple-700 mb-4 flex items-center"><i class="fas fa-user-shield text-purple-400 mr-3"></i>集団授業では力を発揮できない</h3>
+    <div class="mb-3 text-gray-800">【よくある悩み】</div>
+    <ul class="list-disc ml-6 mb-2 text-gray-700">
+      <li>大人数の空間が苦手、質問がしにくい</li>
+      <li>自分のペースでじっくり進めたい</li>
+      <li>同じ質問を何度もしたいけど気まずい</li>
+      <li>自信が持てず成績に波がある</li>
+    </ul>
+    <div class="mb-2 text-gray-800 font-bold">【メディカルゼロの解決策】</div>
+    <ul class="ml-6 mb-3 text-gray-700">
+      <li>1対1＋少人数型完全個別対応</li>
+      <li>カリキュラムも自分ペースで自在に調整</li>
+      <li>何でも質問しやすいアットホームな雰囲気</li>
+      <li>自己肯定感が高まる寄り添い型サポート</li>
+      <li>苦手分析＆成功体験積み上げ式伸長戦略</li>
+    </ul>
+    <div class="mb-2 font-semibold text-purple-900">【ビフォーアフター】</div>
+    <div class="bg-white rounded-md p-2 shadow before-after mb-3">以前…「人が多いと不安で集中できなかった」<br>今…「落ち着いた空間と自由度高い対話で、学ぶ楽しさを再発見！」</div>
+    <div class="mb-2 font-semibold text-purple-900">【成功事例】</div>
+    <ul class="ml-6 mb-3 text-gray-700">
+      <li>「集団塾で悩み→個別最適化で志望校合格」(高3女子)</li>
+      <li>「何度でも質問OKで苦手を克服」(高1男子)</li>
+    </ul>
+    <div class="mb-2 font-semibold text-purple-900">【安心できる学びの場】</div>
+    <div class="text-gray-700">「質問しても大丈夫」「自分のペースで進める」安心感が自信と継続につながります。</div>
+    <div class="mt-3 text-sm text-purple-900 font-semibold">なぜメディカルゼロ？</div>
+    <div class="mb-2 text-gray-700">1人1人違うからこそ、型にはめない個別最適が根本思想。静かな自習室と自由な質問体制で安心してレベルアップできます。</div>
+  </section>
+
+  <!-- あなたのタイプ診断セクション -->
+  <section class="max-w-3xl mx-auto bg-white rounded-xl shadow px-5 py-10 mb-10">
+    <h4 class="text-xl text-blue-700 font-bold mb-4">自分に合ったサポートを見つけるには</h4>
+    <ul class="ml-5 mb-3 text-gray-700 list-disc">
+      <li>部活も勉強も本気でやりたい（文武両道層）</li>
+      <li>何をどう勉強していいか分からない（勉強迷子層）</li>
+      <li>もう1ランク伸ばしたい（高自走層）</li>
+      <li>集団は苦手、自分のペース重視（非集団適応層）</li>
+    </ul>
+    <p class="mt-2 text-gray-600 text-sm">複数タイプに該当する場合もOK！<br>まずは無料個別相談で、最適なサポートを一緒に見つけましょう。</p>
+    <div class="mt-5 flex flex-wrap gap-2">
+      <a href="#" class="px-4 py-2 rounded-full bg-blue-500 text-white font-semibold shadow hover:bg-blue-600">無料相談・体験に申し込む</a>
+    </div>
+  </section>
+
+  <!-- 共通する価値 -->
+  <section class="py-12 px-4 max-w-5xl mx-auto">
+    <h4 class="text-xl font-bold text-blue-700 mb-4">タイプに関わらず、メディカルゼロが届ける3つの価値</h4>
+    <div class="flex flex-col sm:flex-row gap-8 justify-between">
+      <div class="flex-1 bg-blue-50 rounded-xl p-6 shadow hover:scale-105 transition">
+        <i class="fas fa-lightbulb text-blue-400 text-3xl mb-2"></i>
+        <div class="font-semibold text-blue-800 mb-1">思考力の育成</div>
+        <div class="text-gray-700 text-sm">正解のない時代を生き抜く「考える力」を育てます。すべての学びの基盤です。</div>
+      </div>
+      <div class="flex-1 bg-green-50 rounded-xl p-6 shadow hover:scale-105 transition">
+        <i class="fas fa-sync-alt text-green-400 text-3xl mb-2"></i>
+        <div class="font-semibold text-green-800 mb-1">習慣化のサポート</div>
+        <div class="text-gray-700 text-sm">継続する習慣を定着。小さな成功体験の積み重ねを大切にします。</div>
+      </div>
+      <div class="flex-1 bg-yellow-50 rounded-xl p-6 shadow hover:scale-105 transition">
+        <i class="fas fa-walking text-yellow-400 text-3xl mb-2"></i>
+        <div class="font-semibold text-yellow-800 mb-1">自走力の向上</div>
+        <div class="text-gray-700 text-sm">自ら目標を立て、自分で行動し続ける「自走力」を徹底的に鍛えます。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 講師からのメッセージ -->
+  <section class="max-w-4xl mx-auto my-10 px-4">
+    <h2 class="text-xl font-bold text-blue-800 mb-5">講師からのメッセージ</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <div class="bg-blue-50 rounded-xl p-5 shadow flex items-center space-x-3">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="講師" class="w-14 h-14 rounded-full object-cover border-2 border-blue-300">
+        <div>
+          <div class="font-semibold text-sm text-blue-600 mb-1">宗像桃華</div>
+          <blockquote class="italic text-sm text-gray-700">「文武両立も必ず実現できます。一緒に“自分だけの戦略”を作りましょう！」</blockquote>
+        </div>
+      </div>
+      <div class="bg-pink-50 rounded-xl p-5 shadow flex items-center space-x-3">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="講師" class="w-14 h-14 rounded-full object-cover border-2 border-pink-300">
+        <div>
+          <div class="font-semibold text-sm text-pink-600 mb-1">加藤朋</div>
+          <blockquote class="italic text-sm text-gray-700">「『できない』はスタート。迷っている人は、まず一歩踏み出してください！」</blockquote>
+        </div>
+      </div>
+      <div class="bg-green-50 rounded-xl p-5 shadow flex items-center space-x-3">
+        <img src="https://randomuser.me/api/portraits/men/72.jpg" alt="講師" class="w-14 h-14 rounded-full object-cover border-2 border-green-300">
+        <div>
+          <div class="font-semibold text-sm text-green-600 mb-1">長谷隼太郎</div>
+          <blockquote class="italic text-sm text-gray-700">「高みを目指し続ける姿勢が、人生の可能性を大きく広げます。」</blockquote>
+        </div>
+      </div>
+      <div class="bg-purple-50 rounded-xl p-5 shadow flex items-center space-x-3">
+        <img src="https://randomuser.me/api/portraits/women/48.jpg" alt="講師" class="w-14 h-14 rounded-full object-cover border-2 border-purple-300">
+        <div>
+          <div class="font-semibold text-sm text-purple-600 mb-1">石川こひめ</div>
+          <blockquote class="italic text-sm text-gray-700">「誰にも遠慮せず自分のペースで学びましょう。全力でサポートします。」</blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTAセクション -->
+  <section class="bg-blue-600 py-10 px-4 text-white text-center rounded-t-xl shadow-lg">
+    <h3 class="text-2xl font-bold mb-3">まずは無料相談で、あなたに合った学習法を見つけましょう</h3>
+    <p class="mb-5">専門のコーチがあなたにぴったりの学習戦略とサポート体制をご提案します。<br>お気軽にご相談・体験申込みください！</p>
+    <a href="#" class="bg-yellow-300 hover:bg-yellow-400 text-blue-800 px-7 py-3 rounded-full font-bold text-lg shadow transition">無料相談・体験申込</a>
+    <div class="mt-4 flex flex-col sm:flex-row justify-center items-center gap-5 text-blue-50 text-sm">
+      <span><i class="fas fa-phone-alt mr-1"></i>電話：080-3886-1480</span>
+      <span><i class="fas fa-envelope mr-1"></i>メール：jinishiyama1216@gmail.com</span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 pt-8 pb-4 mt-10 text-gray-200">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row md:justify-between items-center px-5">
+      <div class="flex items-center space-x-2 mb-4 md:mb-0">
+        <img src="https://page.genspark.site/v1/base64_upload/d6b58628397ee062ae2d3d082b48c6d9" alt="MedicalZeroロゴ" class="h-8 w-8 rounded-full shadow">
+        <span class="text-lg font-bold text-white tracking-tight">メディカルゼロ</span>
+      </div>
+      <nav class="flex flex-wrap gap-3 text-sm">
+        <a href="index.html" class="hover:underline">ホーム</a>
+        <a href="characteristics.html" class="hover:underline">特徴</a>
+        <a href="solution.html" class="hover:underline">解決策</a>
+        <a href="difference.html" class="hover:underline">他塾との違い</a>
+        <a href="teacher.html" class="hover:underline">講師紹介</a>
+        <a href="story.html" class="hover:underline">ストーリー</a>
+        <a href="cost.html" class="hover:underline">料金・コース</a>
+        <a href="faq.html" class="hover:underline">アクセス・お問い合わせ</a>
+      </nav>
+      <div class="text-xs mt-4 md:mt-0">&copy; 2024 メディカルゼロ | 広島市中区</div>
+    </div>
+  </footer>
+</body>
+</html>
+

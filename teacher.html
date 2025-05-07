@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>講師紹介 | メディカルゼロ | 医学部生が導く思考力と自走力のコーチング</title>
+  <meta name="description" content="メディカルゼロの医学部生講師陣を詳しく紹介。塾長・石山神をはじめ、宗像桃華、良宇都那玲主、加藤朋、石川大樹、長谷隼太郎、石川こひめなど広島大学医学部生による「教えない・引き出す」コーチングの理念と各講師の専門性、経歴、指導方針を解説。">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+      background: #f7fafc;
+      color: #222;
+      line-height: 1.8;
+    }
+    .gradient-logo {
+      background: linear-gradient(90deg, #228be6 0%, #4dabf7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .profile-block {
+      background: #fff;
+      box-shadow: 0 4px 16px rgba(34, 139, 230, 0.08);
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: box-shadow 0.3s;
+    }
+    .profile-block:hover {
+      box-shadow: 0 8px 28px rgba(34,139,230,0.15);
+    }
+    .profile-pic {
+      width: 6rem; height: 6rem;
+      object-fit: cover;
+      background: #e9ecef;
+      border-radius: 100%;
+      margin-right: 2rem;
+      border: 4px solid #e7f5ff;
+      filter: grayscale(10%);
+    }
+    @media (max-width: 768px) {
+      .profile-block { flex-direction: column; align-items: flex-start; }
+      .profile-pic { margin-right: 0; margin-bottom: 1rem; }
+    }
+    .section-block { margin: 0 auto; max-width: 900px; padding: 2.5rem 1rem 1.5rem 1rem; }
+    .section-title {
+      font-size: 2rem; font-weight: 700;
+      color: #228be6;
+      margin-bottom: 1rem;
+    }
+    .section-subtitle { font-size: 1.2rem; color: #444; margin-bottom: 2rem;}
+    .bg-gradient-hero {
+      background: linear-gradient(105deg,#e3f2fd 70%,#bbdefb 100%);
+    }
+    .msg-quote { 
+      background: #e7f5ff; 
+      border-left: 6px solid #74c0fc; 
+      color: #228be6; 
+      font-style: italic; 
+      padding: 1.2rem 1rem 1.2rem 2rem; 
+      margin: 1.5rem 0 0.5rem 0; 
+      border-radius: 0.5rem;
+    }
+    .badge {
+      background: #dbeafe;
+      color: #228be6;
+      border-radius: 1rem;
+      font-weight: 700;
+      padding: 0.1em 0.8em;
+      font-size: 0.9rem;
+      margin-right: 0.4em;
+    }
+    .card-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr; gap: 2rem;
+    }
+    @media (max-width: 900px) {
+      .card-list { grid-template-columns: 1fr; }
+    }
+    .student-voice {
+      background: #f1f5f9;
+      border-radius: 1.2rem;
+      margin-bottom: 1.2rem;
+      padding: 1.5rem;
+      box-shadow: 0 2px 7px rgba(34,139,230,0.04);
+    }
+    .voice-icon { font-size: 2.2rem; margin-right: 0.75rem; color:#228be6;}
+    .featured { border:2px solid #228be6;}
+    @media print {
+      a[href]:after { content: ""; }
+    }
+  </style>
+</head>
+<body>
+<!-- HEADER -->
+<header class="w-full bg-white shadow-md sticky top-0 z-30">
+  <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+    <div class="flex items-center space-x-2">
+      <span class="text-2xl font-black gradient-logo tracking-wider">MedicalZero</span>
+      <span class="ml-2 text-blue-400 text-lg font-bold">講師紹介</span>
+    </div>
+    <ul class="hidden md:flex gap-6 text-gray-600 font-semibold text-base items-center">
+      <li><a href="index.html" class="hover:text-blue-500 transition">ホーム</a></li>
+      <li><a href="characteristics.html" class="hover:text-blue-500 transition">特徴</a></li>
+      <li><a href="solution.html".html" class="hover:text-blue-500 transition">解決策</a></li>
+      <li><a href="difference.html" class="hover:text-blue-500 transition">他塾との違い</a></li>
+      <li><a href="teacher.html" class="text-blue-700 font-bold">講師紹介</a></li>
+      <li><a href="story.html" class="hover:text-blue-500 transition">ストーリー</a></li>
+      <li><a href="cost.html" class="hover:text-blue-500 transition">料金・コース</a></li>
+      <li><a href="faq.html" class="hover:text-blue-500 transition">アクセス・お問い合わせ</a></li>
+    </ul>
+    <a href="#" class="ml-3 px-4 py-2 rounded-full font-bold text-white bg-blue-600 hover:bg-blue-800 transition text-sm shadow">無料体験申込</a>
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="bg-gradient-hero py-12 mb-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-blue-800 mb-3">医学部生講師陣紹介</h1>
+    <p class="text-lg mt-4 text-blue-600 font-semibold">現役医学部生が導く、思考力と自走力のコーチング</p>
+    <p class="mt-3 text-gray-700 mb-4">第一線の大学生が伴走する、次世代型学習環境。<br>あなたの可能性を最大限に引き出します。</p>
+    <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1100&q=80" alt="講師集合イメージ" class="rounded-xl mx-auto shadow-lg w-full max-w-[700px] h-72 object-cover object-center">
+  </div>
+</section>
+
+<!-- 講師陣の特徴概要 -->
+<section id="point-summary" class="section-block">
+  <h2 class="section-title mb-2"><i class="fa-solid fa-user-graduate mr-3"></i>なぜ医学部生講師なのか</h2>
+  <p class="section-subtitle">現役合格を勝ち取った大学生だからこそ分かる「今」の受験。<br>
+    医学部生講師ならではのリアルな受験戦略と、思考力・自走力を伸ばす圧倒的サポートがここに。</p>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-2">
+    <div class="bg-white rounded-xl p-6 text-center shadow">
+      <div class="text-3xl text-blue-600 mb-2"><i class="fa-solid fa-lightbulb"></i></div>
+      <div class="font-bold text-lg mb-1">最新の受験情報に精通</div>
+      <p class="text-gray-500 text-sm">現役トップ大学生が、入試の変化や最新傾向をリアルに伝えます。</p>
+    </div>
+    <div class="bg-white rounded-xl p-6 text-center shadow">
+      <div class="text-3xl text-blue-600 mb-2"><i class="fa-solid fa-trophy"></i></div>
+      <div class="font-bold text-lg mb-1">成功・失敗に基づく指導</div>
+      <p class="text-gray-500 text-sm">自身の挫折や逆転合格体験から、「失敗しない勉強法」を徹底指南。</p>
+    </div>
+    <div class="bg-white rounded-xl p-6 text-center shadow">
+      <div class="text-3xl text-blue-600 mb-2"><i class="fa-solid fa-brain"></i></div>
+      <div class="font-bold text-lg mb-1">思考力育成の専門家</div>
+      <p class="text-gray-500 text-sm">知識の押し付けでなく、一人ひとりの「考える力」を引き出します。</p>
+    </div>
+  </div>
+  <div class="msg-quote mt-6">
+    <i class="fa-solid fa-person-chalkboard mr-2"></i>
+    <span class="text-lg font-bold">メディカルゼロの講師は「教える人」ではなく、あなたの可能性を引き出す「コーチ」です。</span>
+  </div>
+</section>
+
+<!-- 塾長紹介 -->
+<section class="section-block">
+  <div class="section-title mb-4 flex items-center"><i class="fa-solid fa-star mr-3"></i>塾長 石山神</div>
+  <div class="profile-block flex-col md:flex-row featured">
+    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=240&q=80" alt="塾長 石山神" class="profile-pic mb-2 md:mb-0">
+    <div>
+      <div class="flex flex-col">
+        <span class="badge">塾長</span>
+        <span class="font-extrabold text-xl text-blue-800">石山 神</span>
+      </div>
+      <p class="mt-2 text-gray-700">
+        二浪、数多の挫折と工夫を経て、偏差値40台から医学部合格へ。「なぜ伸びないのか？」「何を変える？」を考え続けた結果、自分だけの学習法を確立。「教育は自走力と考える力を引き出すもの」という信念を持つ、熱意あふれる塾長です。
+      </p>
+      <p class="mt-2 text-gray-500 text-sm">【指導理念】<br>
+        一人ひとりが「自ら考え、選び、実行できる」強さを持てるように。失敗と成功から学ぶ“正しい努力”の本質を伝えます。
+      </p>
+      <a href="#" class="mt-3 inline-block bg-blue-600 hover:bg-blue-900 text-white px-5 py-2 rounded-full font-bold text-sm shadow transition">詳しいストーリーを読む</a>
+      <div class="msg-quote mt-4">「すべての子が“自分だけの変化”を起こせる場所。それがメディカルゼロです。」</div>
+    </div>
+  </div>
+</section>
+
+<!-- 講師紹介MAIN -->
+<section class="section-block">
+  <div class="section-title"><i class="fa-solid fa-users mr-2"></i>医学部生講師陣</div>
+  <div class="grid md:grid-cols-2 gap-6">
+
+    <!-- 宗像桃華 -->
+    <div class="profile-block">
+      <div class="flex items-center mb-2">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="宗像桃華" class="profile-pic">
+        <div>
+          <div>
+            <span class="badge">化学・物理・英語</span>
+            <span class="badge">広島大学医学部</span>
+          </div>
+          <span class="font-bold text-lg text-blue-700">宗像 桃華（むなかたももか）</span>
+          <div class="text-gray-500 text-sm">2004年5月9日生 / 広島県広島市出身</div>
+        </div>
+      </div>
+      <ul class="mb-2 text-sm text-gray-700">
+        <li><b>経歴：</b>広大附属中高出身。6年間バスケ部＆軽音部・科学研究部も並行。浪人で自分に合った学習法を発見し医学部合格。</li>
+        <li><b>趣味：</b>音楽鑑賞、旅行、スポーツ観戦</li>
+        <li><b>指導理念：</b>自分自身を客観的に分析し、自分に合った勉強スタイルを見つけることが最も重要</li>
+      </ul>
+      <div class="msg-quote text-sm">「部活も勉強も全力で頑張ったからこそ、朝勉の習慣や“オンリーワンの学習法”に出会えました。あなたにもその近道を見つけてほしいです！」</div>
+    </div>
+    <!-- 良宇都那玲主 -->
+    <div class="profile-block">
+      <div class="flex items-center mb-2">
+        <img src="https://randomuser.me/api/portraits/men/18.jpg" alt="良宇都那玲主" class="profile-pic">
+        <div>
+          <div>
+            <span class="badge">古典以外全般</span>
+            <span class="badge">広島大学医学部</span>
+          </div>
+          <span class="font-bold text-lg text-blue-700">良宇都 那玲主（らうとなれす）</span>
+          <div class="text-gray-500 text-sm">2005年5月1日生 / 大阪府枚方市出身</div>
+        </div>
+      </div>
+      <ul class="mb-2 text-sm text-gray-700">
+        <li><b>経歴：</b>東大寺学園出身。広大医学部を2位で合格。個別指導経験60人以上。</li>
+        <li><b>趣味：</b>PS5ゲーム、剣道</li>
+        <li><b>指導理念：</b>「学習は将来の自分への投資」。再現性の高い勉強法の重要性を伝えます。</li>
+      </ul>
+      <div class="msg-quote text-sm">「努力量は才能を凌駕します。“自分なりの積み重ね”が最強の武器です。」</div>
+    </div>
+    <!-- 加藤朋 -->
+    <div class="profile-block">
+      <div class="flex items-center mb-2">
+        <img src="https://randomuser.me/api/portraits/men/31.jpg" alt="加藤朋" class="profile-pic">
+        <div>
+          <div>
+            <span class="badge">英語・数学・化学・物理</span>
+            <span class="badge">広島大学医学部</span>
+          </div>
+          <span class="font-bold text-lg text-blue-700">加藤 朋</span>
+          <div class="text-gray-500 text-sm">大阪府出身</div>
+        </div>
+      </div>
+      <ul class="mb-2 text-sm text-gray-700">
+        <li><b>経歴：</b>大阪の中堅公立高校出身。浪人期に恩師の影響で勉強法を見直し成績急上昇。</li>
+        <li><b>趣味：</b>サッカー、フットサル、温泉巡り</li>
+        <li><b>指導理念：</b>再現性の高い解法を伝えたい</li>
+      </ul>
+      <div class="msg-quote text-sm">「“たまたま解けた”を“何度でも解ける”に。効率よりも本質を大切にしましょう。」</div>
+    </div>
+
+    <!-- 石川大樹 -->
+    <div class="profile-block">
+      <div class="flex items-center mb-2">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="石川大樹" class="profile-pic">
+        <div>
+          <div>
+            <span class="badge">英語</span>
+            <span class="badge">広島大学医学部</span>
+          </div>
+          <span class="font-bold text-lg text-blue-700">石川 大樹</span>
+          <div class="text-gray-500 text-sm">2004年6月24日生 / 広島県広島市出身</div>
+        </div>
+      </div>
+      <ul class="mb-2 text-sm text-gray-700">
+        <li><b>経歴：</b>広島学院中出身。野球部・書道部・生徒会など幅広い経験。</li>
+        <li><b>趣味：</b>音楽鑑賞、スポーツ</li>
+        <li><b>指導理念：</b>受験は「頭で考え抜く」こと。自己分析の大切さを伝えます。</li>
+      </ul>
+      <div class="msg-quote text-sm">「困った時こそ“なぜ”と自分に問いましょう。道は必ず開けます！」</div>
+    </div>
+
+    <!-- 長谷隼太郎 -->
+    <div class="profile-block">
+      <div class="flex items-center mb-2">
+        <img src="https://randomuser.me/api/portraits/men/28.jpg" alt="長谷隼太郎" class="profile-pic">
+        <div>
+          <div>
+            <span class="badge">数学・物理・化学</span>
+            <span class="badge">広島大学医学部</span>
+          </div>
+          <span class="font-bold text-lg text-blue-700">長谷 隼太郎（はせしゅんたろう）</span>
+          <div class="text-gray-500 text-sm">2003年生 / 神奈川県横浜市出身</div>
+        </div>
+      </div>
+      <ul class="mb-2 text-sm text-gray-700">
+        <li><b>経歴：</b>横浜翠嵐高→浪人→広大医学部。野球・フットサル部。</li>
+        <li><b>趣味：</b>野球、海外サッカー観戦、体を動かすこと</li>
+        <li><b>指導理念：</b>理解の深さ＆毎日の積み重ねを大事に</li>
+      </ul>
+      <div class="msg-quote text-sm">「毎日小さな一歩でも続ければ、大きな成果につながります。」</div>
+    </div>
+
+
+    <!-- 石川こひめ -->
+    <div class="profile-block">
+      <div class="flex items-center mb-2">
+        <img src="https://randomuser.me/api/portraits/women/39.jpg" alt="石川こひめ" class="profile-pic">
+        <div>
+          <div>
+            <span class="badge">生物・化学・数学</span>
+            <span class="badge">広島大学医学部</span>
+          </div>
+          <span class="font-bold text-lg text-blue-700">石川 こひめ</span>
+          <div class="text-gray-500 text-sm">広島大学附属中・高出身</div>
+        </div>
+      </div>
+      <ul class="mb-2 text-sm text-gray-700">
+        <li><b>経歴：</b>広大附属中・高でSSH科学研究で特選。管弦楽班に所属。</li>
+        <li><b>趣味：</b>楽器演奏、映画鑑賞、写真、旅行</li>
+        <li><b>指導理念：</b>限られた時間で最大効果のある要領のよい学習法伝授</li>
+      </ul>
+      <div class="msg-quote text-sm">「“忙しい”は武器。限られた時間を賢く使えば、現役合格も夢じゃない！」</div>
+    </div>
+  </div>
+</section>
+
+<!-- 指導スタイルビジュアル -->
+<section class="section-block">
+  <h2 class="section-title"><i class="fa-solid fa-chalkboard-user mr-2"></i>メディカルゼロの指導スタイル</h2>
+  <div class="flex flex-col md:flex-row gap-6">
+    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=450&q=80" alt="マンツーマン指導" class="w-full md:w-1/3 rounded-xl object-cover shadow">
+    <img src="https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?auto=format&fit=crop&w=450&q=80" alt="質問対応風景" class="w-full md:w-1/3 rounded-xl object-cover shadow">
+    <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a2374?auto=format&fit=crop&w=450&q=80" alt="面談・コーチング" class="w-full md:w-1/3 rounded-xl object-cover shadow">
+  </div>
+  <div class="mt-5 text-lg text-blue-800 font-bold">「教えない・引き出す」アプローチ</div>
+  <ul class="list-disc list-inside text-gray-700 mt-1">
+    <li>「正解」や「答え」を教えず、考える“問い”をぶつける</li>
+    <li>解き方の過程や理由を一緒に言語化・可視化する</li>
+    <li>生徒自身に「気づき」を与えるフィードバック</li>
+    <li>成功例：「類題にそっくりだった！」「自分で解けた実感がついた！」など多数</li>
+  </ul>
+</section>
+
+<!-- 講師陣の共通理念 -->
+<section class="section-block">
+  <h2 class="section-title"><i class="fa-solid fa-handshake-angle mr-2"></i>全講師に共通する理念と姿勢</h2>
+  <div class="grid md:grid-cols-4 gap-6 mt-3 mb-3">
+    <div class="bg-blue-50 rounded-lg p-5 text-center">
+      <div class="text-3xl text-blue-700 mb-1"><i class="fa-solid fa-brain"></i></div>
+      <div class="font-bold">思考力を鍛える</div>
+      <div class="text-gray-500 text-xs">答えを「覚える」から「導く」へ</div>
+    </div>
+    <div class="bg-blue-50 rounded-lg p-5 text-center">
+      <div class="text-3xl text-blue-700 mb-1"><i class="fa-solid fa-rocket"></i></div>
+      <div class="font-bold">自走力を育てる</div>
+      <div class="text-gray-500 text-xs">主体性と自主性の両方を伸ばします</div>
+    </div>
+    <div class="bg-blue-50 rounded-lg p-5 text-center">
+      <div class="text-3xl text-blue-700 mb-1"><i class="fa-solid fa-user-friends"></i></div>
+      <div class="font-bold">一人ひとりに寄り添う</div>
+      <div class="text-gray-500 text-xs">学力も個性も全員違うからこそ、個別最適化</div>
+    </div>
+    <div class="bg-blue-50 rounded-lg p-5 text-center">
+      <div class="text-3xl text-blue-700 mb-1"><i class="fa-solid fa-star"></i></div>
+      <div class="font-bold">結果にコミットする</div>
+      <div class="text-gray-500 text-xs">最後まで伴走・成果を約束します</div>
+    </div>
+  </div>
+  <div class="msg-quote mt-4">
+    <b>【メディカルゼロ 指導憲章】</b> <br>
+    私たち講師陣は、一人ひとりが“自分で未来を切り開ける人”になれるよう徹底して鍛え、寄り添い、共に歩み続けます。
+  </div>
+</section>
+
+<!-- 採用基準・研修セクション -->
+<section class="section-block">
+  <h2 class="section-title"><i class="fa-solid fa-user-check mr-2"></i>厳選された講師陣</h2>
+  <ul class="list-disc list-inside text-gray-700 ">
+    <li>学力だけでなく、<b>コーチングマインド</b>・<b>コミュニケーション能力</b>を重視</li>
+    <li>採用後も定期的に研修ミーティング・情報共有会を実施</li>
+    <li>「問いかけ」技術や目標達成サポートなど、<b>指導力を磨き続ける仲間</b>だけがプロ講師に</li>
+    <li>全員が「思考力と自走力で人生を変えた」体験を持つ選抜メンバー</li>
+  </ul>
+  <div class="mt-3 text-xs text-gray-400">※採用にご興味のある医学部生・教育関係者はお問い合わせください</div>
+</section>
+
+<!-- 生徒の声 -->
+<section class="section-block">
+  <div class="section-title"><i class="fa-solid fa-comments mr-2"></i>講師についての生徒の声</div>
+  <div class="grid md:grid-cols-2 gap-4 mb-4">
+    <div class="student-voice">
+      <div class="flex items-center mb-1">
+        <span class="voice-icon"><i class="fa-solid fa-user-graduate"></i></span>
+        <span class="text-base font-bold text-blue-800">M.K.さん</span>
+      </div>
+      <div class="text-gray-600 text-sm">「宗像先生のアドバイスで朝勉が習慣になり、成績が上がりました！ 部活も両立できて感謝です。」<span class="ml-2 text-yellow-500"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></div>
+    </div>
+    <div class="student-voice">
+      <div class="flex items-center mb-1">
+        <span class="voice-icon"><i class="fa-solid fa-user-graduate"></i></span>
+        <span class="text-base font-bold text-blue-800">T.R.さん</span>
+      </div>
+      <div class="text-gray-600 text-sm">「なれす先生の親身な面談で勉強のやる気がグッと上がった！分からない所も自分で考えるヒントをくれる先生です」<span class="ml-2 text-yellow-500"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span></div>
+    </div>
+    <div class="student-voice">
+      <div class="flex items-center mb-1">
+        <span class="voice-icon"><i class="fa-solid fa-user-graduate"></i></span>
+        <span class="text-base font-bold text-blue-800">A.S.さん</span>
+      </div>
+      <div class="text-gray-600 text-sm">「どの先生も相談しやすく、勉強だけでなく生活リズムのことまで気にかけてくれるのが嬉しい！」<span class="ml-2 text-yellow-500"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></div>
+    </div>
+    <div class="student-voice">
+      <div class="flex items-center mb-1">
+        <span class="voice-icon"><i class="fa-solid fa-user-graduate"></i></span>
+        <span class="text-base font-bold text-blue-800">匿名希望</span>
+      </div>
+      <div class="text-gray-600 text-sm">「石川大樹先生の細やかな指導で英語が自信科目になりました！本番でも落ち着いて解けました。」<span class="ml-2 text-yellow-500"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-block">
+  <div class="bg-blue-100 px-7 py-8 rounded-xl text-center flex flex-col items-center">
+    <h2 class="text-2xl font-bold text-blue-700 mb-4">あなたも医学部生講師と一緒に成長しませんか？</h2>
+    <p class="text-gray-700 mb-3">最先端の指導×温かい伴走で、あなたの可能性を最大限に引き出します。<br>講師との相性はとても大切。まずは無料で学びの体験を。</p>
+    <a href="#" class="mt-3 px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-800 text-white font-bold shadow text-lg transition">無料体験授業に申込む</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-white mt-10 border-t py-8">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center md:justify-between gap-5">
+      <div class="flex items-center space-x-2">
+        <span class="text-xl font-extrabold gradient-logo tracking-wider">MedicalZero</span>
+        <span class="text-sm text-blue-400 font-bold">講師紹介</span>
+      </div>
+      <nav class="flex flex-wrap space-x-4 mt-3 md:mt-0">
+        <a href="index.html" class="text-gray-600 hover:text-blue-600">ホーム</a>
+        <a href="characteristics.html" class="text-gray-600 hover:text-blue-600">特徴</a>
+        <a href="solution.html" class="text-gray-600 hover:text-blue-600">解決策</a>
+        <a href="difference.html" class="text-gray-600 hover:text-blue-600">他塾との違い</a>
+        <a href="teacher.html" class="text-blue-800 font-bold">講師紹介</a>
+        <a href="story.html" class="text-gray-600 hover:text-blue-600">ストーリー</a>
+        <a href="cost.html" class="text-gray-600 hover:text-blue-600">料金・コース</a>
+        <a href="faq.html" class="text-gray-600 hover:text-blue-600">アクセス・お問い合わせ</a>
+      </nav>
+    </div>
+    <div class="mt-4 text-gray-500 text-sm flex flex-col md:flex-row md:justify-between">
+      <span>広島市中区（詳細はお問い合わせ時にご案内）</span>
+      <span>電話: 080-3886-1480 | メール: jinishiyama1216@gmail.com</span>
+    </div>
+    <div class="text-gray-400 text-xs mt-3">&copy; 2024 メディカルゼロ - 医学部生コーチによる思考力と自走力特化型学習塾</div>
+  </div>
+</footer>
+</body>
+</html>
+

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>よくある質問・お問い合わせ | メディカルゼロ | 思考力と習慣を鍛える成長特化型コーチング学習塾</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="メディカルゼロへのよくある質問と回答、各種お問い合わせ方法を紹介。塾の特徴や指導法、コース・料金、スケジュール、入塾方法など。">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Montserrat', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'sans-serif'; }
+    .faq-section .faq-q { cursor: pointer; }
+    .active-faq { color: #2563eb; }
+    .accordion-item[open] summary { color: #2563eb; }
+    .accordion-item summary::-webkit-details-marker {display: none;}
+    .gradient-bg {
+      background: linear-gradient(135deg, #e0ecfa 0%, #f7fafd 100%);
+    }
+    .main-cta { background-color: #2563eb; color: #fff; }
+    .main-cta:hover { background: #1d4ed8; }
+    .icon-box { background: #f1f5f9; border-radius: 100%; width:3rem; height:3rem; display: flex; align-items:center; justify-content:center; color:#2563eb; margin-right:1rem; font-size:1.5rem;}
+    .category-btn { background: #f1f5f9 }
+    .category-btn.active, .category-btn:focus { background: #2563eb; color: #fff;}
+    .faq-answer { animation: fadein 0.5s;}
+    @keyframes fadein { from {opacity: 0;} to { opacity:1; } }
+    .input-border { border: 1px solid #cbd5e1; border-radius: 0.5rem;}
+    .accordion-item {border-bottom: 1px solid #e5e7eb; margin-bottom: 0.5rem;}
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+  <!-- Header -->
+  <header class="w-full bg-white shadow z-10">
+    <div class="container mx-auto px-4 flex items-center justify-between py-4">
+      <a href="/" class="flex items-center">
+        <span class="text-2xl font-extrabold text-blue-700 tracking-tight flex items-center">
+          <i class="fas fa-graduation-cap mr-2"></i>メディカルゼロ
+        </span>
+      </a>
+      <nav class="hidden md:flex flex-row space-x-7 items-center ml-12">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">ホーム</a>
+        <a href="characteristics.html" class="text-gray-700 hover:text-blue-600 font-medium transition">特徴</a>
+        <a href="solution.html" class="text-gray-700 hover:text-blue-600 font-medium transition">解決策</a>
+        <a href="difference.html" class="text-gray-700 hover:text-blue-600 font-medium transition">他塾との違い</a>
+        <a href="teacher.html" class="text-gray-700 hover:text-blue-600 font-medium transition">講師紹介</a>
+        <a href="story.html" class="text-gray-700 hover:text-blue-600 font-medium transition">ストーリー</a>
+        <a href="cost.html" class="text-gray-700 hover:text-blue-600 font-medium transition">料金・コース</a>
+        <a href="faq.html" class="text-gray-700 hover:text-blue-600 font-medium transition">アクセス・お問い合わせ</a>
+      </nav>
+      <a href="#form" class="ml-6 px-5 py-2 rounded-lg main-cta font-semibold shadow hover:scale-105 transition">無料体験申し込み</a>
+    </div>
+  </header>
+
+  <!-- Main Visual -->
+  <section class="w-full gradient-bg py-16 mb-10">
+    <div class="max-w-3xl mx-auto flex flex-col items-center text-center">
+      <h1 class="text-3xl md:text-4xl font-bold text-blue-800 mb-3">よくある質問・お問い合わせ</h1>
+      <p class="text-lg md:text-xl font-medium text-gray-700 mb-5">疑問や不安をすべて解消します</p>
+      <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?fit=crop&w=520&q=80" alt="Q&A illustration" class="rounded-xl shadow mb-4 w-24 h-24 object-cover">
+      <p class="font-medium text-gray-600">どんな些細な質問でもお気軽にどうぞ</p>
+    </div>
+  </section>
+
+  <!-- Introduction -->
+  <section class="max-w-3xl mx-auto px-4 mb-10">
+    <h2 class="text-2xl font-bold text-blue-800 mb-2">新しいタイプの学習塾だからこそ、様々な疑問があると思います</h2>
+    <p class="mb-5 text-gray-700">まずは下記のよくある質問をご覧ください。それでも解決しない場合は、最下部のお問い合わせフォームからお気軽にご連絡ください。</p>
+    <div class="flex flex-wrap mb-6 gap-2">
+      <a href="#faq-category1" class="category-btn px-3 py-2 rounded font-semibold text-blue-800 hover:bg-blue-200 focus:outline-none">塾の特徴・メソッド</a>
+      <a href="#faq-category2" class="category-btn px-3 py-2 rounded font-semibold text-blue-800 hover:bg-blue-200">コース・料金</a>
+      <a href="#faq-category3" class="category-btn px-3 py-2 rounded font-semibold text-blue-800 hover:bg-blue-200">授業・スケジュール</a>
+      <a href="#faq-category4" class="category-btn px-3 py-2 rounded font-semibold text-blue-800 hover:bg-blue-200">入塾・体験</a>
+      <a href="#faq-category5" class="category-btn px-3 py-2 rounded font-semibold text-blue-800 hover:bg-blue-200">その他</a>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="max-w-3xl mx-auto px-4 mb-12 faq-section">
+    <!-- Category 1 -->
+    <h3 id="faq-category1" class="text-xl font-bold text-blue-700 mb-3 mt-8"><i class="fas fa-question-circle mr-2"></i>塾の特徴・メソッドについて</h3>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-paperclip mr-3 text-blue-600"></i>「教えない・引き出す」とは具体的にどういう指導法ですか？</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        一方的に知識や解き方を教えるのではなく、生徒自身に「なぜ？」「どうしてそうなる？」と問いかけ、自分で考え納得できるまで導く指導スタイルです。全ての答えを与えず、生徒の思考を深めることで「本質を理解し応用できる力」を身につけてもらうのが特徴です。一般的な塾との最大の違いは“成績向上を自らの成長実感を持って達成できる”ことです。
+      </div>
+    </details>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-user-graduate mr-3 text-blue-600"></i>医学部生の講師は教え方がプロではないのでは？</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        当塾では全講師に教育研修を徹底しており、過去の経験や受験ノウハウではなく「生徒が自分で考えられるように育てる」指導法を共有しています。また、現役受験生としての最新情報提供、共感的なサポート、思考力や習慣化を本気で支える姿勢が強みです。
+      </div>
+    </details>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-users mr-3 text-blue-600"></i>どんな生徒に向いている塾ですか？</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        文武両道を目指す生徒、勉強法に迷っている生徒、自習中心だが更に伸びたい生徒、集団授業が苦手な生徒など「自分に合ったやり方・成長方法」を見つけて自走力を高めたい方に最適です。従来型の一方通行な授業が合わなかった方に特におすすめです。
+      </div>
+    </details>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-seedling mr-3 text-blue-600"></i>勉強の習慣がない/基礎学力が低い状態でも大丈夫ですか？</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        もちろん大丈夫です！まずは生活リズムや学習習慣づくりから一つずつ伴走します。目標を小刻みに設定し、達成の積み重ねを重視。課題や不安にも寄り添い「自分にもできる」という自信をつけていきます。
+      </div>
+    </details>
+
+    <!-- Category 2 -->
+    <h3 id="faq-category2" class="text-xl font-bold text-blue-700 mb-3 mt-10"><i class="fas fa-coins mr-2"></i>コース・料金について</h3>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-layer-group mr-3 text-blue-600"></i>2つのプランの違いは何ですか？どう選べばよいですか？</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        「通常プラン」は自習中心で自分で進める力を伸ばしたい方向け、「個別コンサルプラン」は毎週の面談や計画立案など“伴走”型サポートを重視したい方向けです。無料体験で雰囲気を確認し、相談しながらご自身に合ったプランを決めていただけます。
+      </div>
+    </details>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-exchange-alt mr-3 text-blue-600"></i>途中でプラン変更はできますか？</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        可能です。学習状況や目標、サポートの必要度に応じて月単位で変更ができます。お気軽にご相談ください。
+      </div>
+    </details>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-money-check-alt mr-3 text-blue-600"></i>他の塾と比べて料金が高いのはなぜですか？</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        専属コーチによる毎週の面談、個別計画、徹底的な習慣化支援など他塾では得られないサポートの質と量が理由です。長期的に「考える力・自走力」を身につける“投資型”教育を重視しています。
+      </div>
+    </details>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-users mr-3 text-blue-600"></i>兄弟姉妹で入塾する場合の割引はありますか？</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        ご兄弟での入塾の場合は割引制度がございます。詳細は時期や状況により異なりますので、直接お問い合わせください。
+      </div>
+    </details>
+
+    <!-- Category 3 -->
+    <h3 id="faq-category3" class="text-xl font-bold text-blue-700 mb-3 mt-10"><i class="fas fa-clock mr-2"></i>授業・スケジュールについて</h3>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-door-open mr-3 text-blue-600"></i>自習室の利用時間や環境はどうなっていますか？</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        平日（月〜金）は朝から22時まで集中できる環境を開放しています。静かな空間で、質問もスムーズに対応します。
+      </div>
+    </details>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-tasks mr-3 text-blue-600"></i>部活動で忙しくても対応してもらえますか？</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        多くの生徒が部活動と両立しています。短時間で成果を出すための戦略設計やスケジュール管理のサポートもお任せください。
+      </div>
+    </details>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-calendar-week mr-3 text-blue-600"></i>週何回通えばいいですか？</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        通塾頻度は個々の目標や生活リズムに合わせてご提案します。週2〜3回をおすすめしていますが、相談しながら最適な頻度を決定可能です。
+      </div>
+    </details>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-sun mr-3 text-blue-600"></i>長期休暇（夏休みなど）の対応はどうなりますか？</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        長期休暇中は特別プログラムや集中講座も実施します。自習室も通常通り利用可能です。
+      </div>
+    </details>
+
+    <!-- Category 4 -->
+    <h3 id="faq-category4" class="text-xl font-bold text-blue-700 mb-3 mt-10"><i class="fas fa-sign-in-alt mr-2"></i>入塾・体験について</h3>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-chalkboard-teacher mr-3 text-blue-600"></i>無料体験はどのような内容ですか？</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        本番さながらの体験学習・面談、学習プランの簡易作成、教室見学などをセットでご案内します。持ち物など詳細は予約後にご案内します。
+      </div>
+    </details>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-route mr-3 text-blue-600"></i>入塾の流れを教えてください</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        無料体験申し込み→ヒアリング（現状確認）→最適プランのご提案→入塾手続き、という流れになります。
+      </div>
+    </details>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-file-alt mr-3 text-blue-600"></i>入塾に必要なものは何ですか？</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        簡単な申込書、初月受講費用、筆記用具等。詳細はお申込時にご案内します。
+      </div>
+    </details>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-random mr-3 text-blue-600"></i>途中入塾/途中退塾はできますか？</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        いつでも入塾・退塾が可能です。ご相談はお気軽にどうぞ。
+      </div>
+    </details>
+
+    <!-- Category 5 -->
+    <h3 id="faq-category5" class="text-xl font-bold text-blue-700 mb-3 mt-10"><i class="fas fa-list-alt mr-2"></i>その他</h3>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-book-open mr-3 text-blue-600"></i>学校の宿題や定期テスト対策もサポートしてもらえますか？</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        学校課題や定期テスト前の計画立案・勉強法相談も対応します。必要に応じて重点指導も相談できます。
+      </div>
+    </details>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-apple-alt mr-3 text-blue-600"></i>補食サービスの詳細を教えてください</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        夕方〜夜に、塾提携の飲食店からおにぎり等の軽食を用意しています。メニュー例やアレルギー確認等は入塾時に個別相談可能です。
+      </div>
+    </details>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-chalkboard mr-3 text-blue-600"></i>講師の研修はどのように行われていますか？</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        専門的な教育研修、模擬指導、指導方針共有の定期勉強会などを通じて指導品質を徹底管理しています。
+      </div>
+    </details>
+    <details class="accordion-item">
+      <summary class="faq-q font-semibold py-3 flex items-center"><i class="fas fa-headset mr-3 text-blue-600"></i>体調不良や学校行事で欠席した場合のフォローはありますか？</summary>
+      <div class="faq-answer pb-3 pt-1 pl-8 text-gray-700">
+        振替対応や計画の調整、個別相談など柔軟にフォロー可能です。事前連絡をお願いします。
+      </div>
+    </details>
+  </section>
+
+  <!-- Contact Methods -->
+  <section class="max-w-3xl mx-auto px-4 py-8 mb-10 bg-white rounded-xl shadow">
+    <h2 class="text-2xl font-bold text-blue-700 mb-6"><i class="fas fa-comment-dots mr-2"></i>お問い合わせ・無料体験のご予約</h2>
+    <div class="grid md:grid-cols-3 gap-6 mb-7">
+      <div>
+        <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+        <div class="font-bold mt-1">電話</div>
+        <div class="text-gray-700 text-sm">080-3886-1480</div>
+        <div class="text-xs text-gray-500">平日10:00〜21:00／土日10:00〜18:00</div>
+      </div>
+      <div>
+        <div class="icon-box"><i class="fas fa-envelope"></i></div>
+        <div class="font-bold mt-1">メール</div>
+        <div class="text-gray-700 text-sm">jinishiyama1216@gmail.com</div>
+        <div class="text-xs text-gray-500">24時間受付・返信は通常24時間以内</div>
+      </div>
+      <div>
+        <div class="icon-box"><i class="fab fa-line"></i></div>
+        <div class="font-bold mt-1">LINE相談</div>
+        <div class="text-gray-700 text-sm">LINE ID: medicalzero</div>
+        <div class="text-xs text-gray-500">気軽にご質問、ご予約どうぞ</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="form" class="max-w-2xl mx-auto px-4 py-8 mb-12 bg-white rounded-xl shadow">
+    <h3 class="text-xl font-bold text-blue-700 mb-4"><i class="fas fa-paper-plane mr-1"></i>お問い合わせフォーム</h3>
+    <form class="space-y-6">
+      <div>
+        <label class="block font-semibold mb-1" for="name">お名前 <span class="text-red-500">*</span></label>
+        <input id="name" type="text" required class="w-full input-border p-2" placeholder="山田 太郎">
+      </div>
+      <div>
+        <label class="block font-semibold mb-1" for="email">メールアドレス <span class="text-red-500">*</span></label>
+        <input id="email" type="email" required class="w-full input-border p-2" placeholder="sample@example.com">
+      </div>
+      <div>
+        <label class="block font-semibold mb-1" for="phone">電話番号 <span class="text-red-500">*</span></label>
+        <input id="phone" type="tel" required class="w-full input-border p-2" placeholder="080-xxxx-xxxx">
+      </div>
+      <div>
+        <label class="block font-semibold mb-1" for="content">お問い合わせ内容 <span class="text-red-500">*</span></label>
+        <textarea id="content" required class="w-full input-border p-2" rows="4" placeholder="ご質問・ご希望の体験内容などを自由にご記入ください"></textarea>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label class="block font-semibold mb-1" for="grade">学年（任意）</label>
+          <input id="grade" type="text" class="w-full input-border p-2" placeholder="例：高校2年生">
+        </div>
+        <div>
+          <label class="block font-semibold mb-1" for="school">志望校（任意）</label>
+          <input id="school" type="text" class="w-full input-border p-2" placeholder="例：広島大学医学部">
+        </div>
+      </div>
+      <div>
+        <label class="block font-semibold mb-1" for="status">現在の状況（任意）</label>
+        <input id="status" type="text" class="w-full input-border p-2" placeholder="部活との両立中 など">
+      </div>
+      <div>
+        <label class="block font-semibold mb-1" for="date">体験希望日時（任意）</label>
+        <input id="date" type="text" class="w-full input-border p-2" placeholder="〇月〇日 〇時希望">
+      </div>
+      <div class="flex items-center mt-3">
+        <input required id="agree" type="checkbox" class="mr-2">
+        <label for="agree" class="text-sm text-gray-600">プライバシーポリシーに同意します</label>
+        <a href="#privacy" class="ml-2 underline text-blue-700 text-sm">詳細はこちら</a>
+      </div>
+      <button type="submit" class="main-cta font-semibold py-3 px-8 w-full rounded-lg shadow mt-2 text-lg hover:scale-105 transition">送信する</button>
+    </form>
+  </section>
+
+  <!-- Access Section -->
+  <section class="max-w-3xl mx-auto px-4 py-8 bg-white rounded-xl shadow mb-10">
+    <h2 class="text-2xl font-bold text-blue-700 mb-3"><i class="fas fa-map-marker-alt mr-2"></i>アクセス・所在地</h2>
+    <p class="mb-2 text-gray-700">広島市中区（詳細な住所はご連絡時にお伝えします）</p>
+    <div class="mb-3 rounded shadow overflow-hidden border border-gray-200">
+      <iframe src="https://maps.google.com/maps?q=広島市中区&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="220" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"></iframe>
+    </div>
+    <ul class="ml-4 text-gray-600 text-sm list-disc">
+      <li>最寄り駅：広電「本通」駅・広電「紙屋町東」駅(いずれも徒歩圏内)</li>
+      <li>周辺の目印：パセーラやそごう広島店（本通り近く）</li>
+      <li>通学や送迎もしやすい立地です</li>
+    </ul>
+  </section>
+
+  <!-- Unique FAQs -->
+  <section class="max-w-3xl mx-auto px-4 py-8 mb-10 bg-white rounded-xl shadow">
+    <h3 class="text-xl font-bold text-blue-700 mb-2"><i class="fas fa-lightbulb mr-2"></i>こんなお問い合わせもお気軽に</h3>
+    <ul class="list-inside list-disc mb-2 text-gray-700 space-y-2">
+      <li>「通信教育のみでやってきたけどついていけますか？」→はい、現状から最適な学習スタイルを一緒に作り上げます。</li>
+      <li>「親の仕事で転勤が多いですが対応可能ですか？」→オンラインフォローや休会制度もありますのでご相談ください。</li>
+      <li>「大学受験以外（英検/推薦）の指導もありますか？」→各種対応経験豊富です、ご相談ください。</li>
+      <li>「ADHD/不登校気味ですが対応してもらえますか？」→個別サポート体制が整っています。事前に必ずご相談ください。</li>
+      <li>その他どんな些細なことでも、お気軽にご相談ください！</li>
+    </ul>
+    <p class="mt-2 text-gray-600 text-sm">どんな些細な質問も大歓迎です。</p>
+  </section>
+
+  <!-- Privacy Section -->
+  <section id="privacy" class="max-w-3xl mx-auto px-4 py-6 mb-10 bg-gray-100 rounded-lg">
+    <h3 class="text-lg font-bold text-gray-700 mb-2"><i class="fas fa-user-shield mr-1"></i>プライバシーポリシー</h3>
+    <p class="mb-1 text-gray-700 text-sm">ご入力いただいた個人情報は、お問い合わせ対応ならびに体験申し込み・ご連絡以外の目的では利用いたしません。第三者に提供することはありません。</p>
+    <p class="mb-1 text-gray-700 text-sm">詳細はご要望に応じて別途開示いたします。</p>
+  </section>
+
+  <!-- CTA -->
+  <section class="max-w-3xl mx-auto px-4 py-8 text-center mb-16">
+    <h2 class="text-2xl font-bold mb-4 text-blue-800"><span class="bg-blue-50 px-4 py-1 rounded">まずは無料体験から始めてみませんか？</span></h2>
+    <p class="text-lg text-gray-700 mb-5">実際に体験することで、メディカルゼロの価値をご体感いただけます。ご希望や不安もお気軽にご相談ください。</p>
+    <a href="#form" class="main-cta px-10 py-3 rounded-full font-semibold text-xl shadow hover:scale-105 transition">無料体験予約はこちら</a>
+    <div class="text-sm text-gray-500 mt-2">※体験授業は随時ご案内します。内容や日程は個別に調整可能です。</div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-8 mt-4">
+    <div class="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+      <div class="mb-3 md:mb-0 flex items-center">
+        <span class="text-xl font-bold tracking-tight flex items-center"><i class="fas fa-graduation-cap mr-2"></i>メディカルゼロ</span>
+        <span class="ml-4 text-sm text-blue-100">広島市中区</span>
+      </div>
+      <div class="flex flex-row space-x-4 mb-2 md:mb-0">
+        <a href="index.html" class="hover:underline">ホーム</a>
+        <a href="characteristics.html" class="hover:underline">特徴</a>
+        <a href="solution.html" class="hover:underline">解決策</a>
+        <a href="difference.html" class="hover:underline">他塾との違い</a>
+        <a href="teacher.html" class="hover:underline">講師紹介</a>
+        <a href="story.html" class="hover:underline">ストーリー</a>
+        <a href="cost.html" class="hover:underline">料金・コース</a>
+        <a href="faq.html" class="hover:underline">アクセス・お問い合わせ</a>
+      </div>
+      <div class="text-xs text-blue-100 mt-2 md:mt-0">&copy; 2024 メディカルゼロ. All rights reserved.</div>
+    </div>
+  </footer>
+  <script>
+    //カテゴリーごとのジャンプ
+    document.querySelectorAll('.category-btn').forEach(btn=>{
+      btn.addEventListener('click', function(e){
+        let id = this.getAttribute('href').substr(1);
+        let target = document.getElementById(id);
+        if(target){
+          target.scrollIntoView({behavior:'smooth'});
+          e.preventDefault();
+        }
+      })
+    });
+  </script>
+</body>
+</html>
+
