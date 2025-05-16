@@ -35,23 +35,42 @@
 <body class="text-gray-800 bg-gray-50">
 
   <!-- Header -->
-  <header class="bg-white shadow-sm sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between">
-      <div class="flex items-center space-x-2">
-        <img src="https://page.genspark.site/v1/base64_upload/d6b58628397ee062ae2d3d082b48c6d9" alt="MedicalZeroロゴ" class="h-10 w-10 rounded-full shadow">
-        <span class="text-2xl font-bold text-blue-700 tracking-tight" style="font-family:'Montserrat',sans-serif;">メディカルゼロ</span>
+  <header class="bg-white border-b shadow-sm">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="images/logo.jpg" alt="MedicalZeroロゴ" class="h-10 w-10 rounded-full bg-gray-100 object-contain">
+        <span class="font-bold text-xl text-blue-900 tracking-wide">メディカルゼロ</span>
       </div>
-      <nav class="hidden md:flex space-x-6 text-md">
-        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">ホーム</a>
-        <a href="characteristics.html" class="text-gray-700 hover:text-blue-600 font-medium transition">特徴</a>
-        <a href="solution.html" class="text-gray-700 hover:text-blue-600 font-medium transition">解決策</a>
-        <a href="difference.html" class="text-gray-700 hover:text-blue-600 font-medium transition">他塾との違い</a>
-        <a href="teacher.html" class="text-gray-700 hover:text-blue-600 font-medium transition">講師紹介</a>
-        <a href="story.html" class="text-gray-700 hover:text-blue-600 font-medium transition">ストーリー</a>
-        <a href="cost.html" class="text-gray-700 hover:text-blue-600 font-medium transition">料金・コース</a>
-        <a href="faq.html" class="text-gray-700 hover:text-blue-600 font-medium transition">アクセス・お問い合わせ</a>
+      <nav class="hidden md:flex space-x-8 text-base font-medium">
+        <a href="index.html" class="text-gray-700 hover:text-blue-700 transition">ホーム</a>
+        <a href="characteristics.html" class="text-gray-700 hover:text-blue-700 transition">特徴</a>
+        <a href="solution.html" class="text-gray-700 hover:text-blue-700 transition">解決策</a>
+        <a href="difference.html" class="text-gray-700 hover:text-blue-700 transition">他塾との違い</a>
+        <a href="teacher.html" class="text-gray-700 hover:text-blue-700 transition">講師紹介</a>
+        <a href="story.html" class="text-gray-700 hover:text-blue-700 transition">ストーリー</a>
+        <a href="cost.html" class="text-gray-700 hover:text-blue-700 transition">料金・コース</a>
+        <a href="faq.html" class="text-gray-700 hover:text-blue-700 transition">アクセス・お問い合わせ</a>
       </nav>
-      <a href="#" class="ml-4 px-5 py-2 bg-blue-500 text-white rounded-full shadow hover:bg-blue-700 font-bold transition">無料体験申込</a>
+      <a href="faq.html#form" class="nav-button hidden md:inline-block ml-6 px-5 py-2 rounded-full bg-blue-600 text-white font-bold transition shadow hover:bg-blue-700">無料体験申し込み</a>
+      <button id="menuBtn" class="md:hidden px-2 py-1">
+        <i class="fas fa-bars text-2xl text-blue-900"></i>
+      </button>
+    </div>
+    <!-- Mobile Nav -->
+    <div id="mobileNav" class="md:hidden fixed inset-0 z-50 bg-white bg-opacity-95 hidden flex-col p-8 space-y-6">
+      <div class="flex justify-between items-center mb-8">
+        <span class="font-bold text-xl text-blue-900 tracking-wide">メディカルゼロ</span>
+        <button onclick="document.getElementById('mobileNav').classList.add('hidden')"><i class="fas fa-times text-2xl text-blue-900"></i></button>
+      </div>
+      <a href="index.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">ホーム</a>
+      <a href="characteristics.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">特徴</a>
+      <a href="solution.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">解決策</a>
+      <a href="difference.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">他塾との違い</a>
+      <a href="teacher.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">講師紹介</a>
+      <a href="story.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">ストーリー</a>
+      <a href="cost.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">料金・コース</a>
+      <a href="faq.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">アクセス・お問い合わせ</a>
+      <a href="faq.html#form" class="block text-gray-700 text-lg font-medium">無料体験申し込み</a>
     </div>
   </header>
 
@@ -207,7 +226,7 @@
     </ul>
     <p class="mt-2 text-gray-600 text-sm">複数タイプに該当する場合もOK！<br>まずは無料個別相談で、最適なサポートを一緒に見つけましょう。</p>
     <div class="mt-5 flex flex-wrap gap-2">
-      <a href="#" class="px-4 py-2 rounded-full bg-blue-500 text-white font-semibold shadow hover:bg-blue-600">無料相談・体験に申し込む</a>
+      <a href="faq.html#form" class="px-4 py-2 rounded-full bg-blue-500 text-white font-semibold shadow hover:bg-blue-600">無料相談・体験に申し込む</a>
     </div>
   </section>
 
@@ -272,7 +291,7 @@
   <section class="bg-blue-600 py-10 px-4 text-white text-center rounded-t-xl shadow-lg">
     <h3 class="text-2xl font-bold mb-3">まずは無料相談で、あなたに合った学習法を見つけましょう</h3>
     <p class="mb-5">専門のコーチがあなたにぴったりの学習戦略とサポート体制をご提案します。<br>お気軽にご相談・体験申込みください！</p>
-    <a href="#" class="bg-yellow-300 hover:bg-yellow-400 text-blue-800 px-7 py-3 rounded-full font-bold text-lg shadow transition">無料相談・体験申込</a>
+    <a href="faq.html#form" class="bg-yellow-300 hover:bg-yellow-400 text-blue-800 px-7 py-3 rounded-full font-bold text-lg shadow transition">無料相談・体験申込</a>
     <div class="mt-4 flex flex-col sm:flex-row justify-center items-center gap-5 text-blue-50 text-sm">
       <span><i class="fas fa-phone-alt mr-1"></i>電話：080-3886-1480</span>
       <span><i class="fas fa-envelope mr-1"></i>メール：jinishiyama1216@gmail.com</span>
@@ -299,6 +318,32 @@
       <div class="text-xs mt-4 md:mt-0">&copy; 2024 メディカルゼロ | 広島市中区</div>
     </div>
   </footer>
+  <!-- Dummy Contact Anchor -->
+  <div id="contact"></div>
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menuBtn').onclick = function() {
+      document.getElementById('mobileNav').classList.remove('hidden');
+    }
+    function closeNav() {
+      document.getElementById('mobileNav').classList.add('hidden');
+    }
+    // Animate on scroll
+    document.addEventListener('DOMContentLoaded', function(){
+      const faders = document.querySelectorAll('.fade-in');
+      function isInViewport(e) {
+        const rect = e.getBoundingClientRect();
+        return rect.top <= window.innerHeight-20 && rect.bottom >= 0;
+      }
+      function animateItems() {
+        faders.forEach(e=>{
+          if (isInViewport(e)) e.classList.add('opacity-100'); else e.classList.remove('opacity-100');
+        });
+      }
+      window.addEventListener('scroll', animateItems);
+      animateItems(); // initial
+    });
+  </script>
 </body>
 </html>
 

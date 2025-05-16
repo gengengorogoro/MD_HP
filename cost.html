@@ -37,23 +37,42 @@
 <body class="bg-gray-50">
 
   <!-- Header -->
-  <header class="bg-white shadow-sm sticky top-0 z-30 print:relative print:shadow-none">
-    <div class="container mx-auto max-w-7xl flex items-center justify-between px-4 py-4">
+  <header class="bg-white border-b shadow-sm">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
       <div class="flex items-center space-x-3">
-        <img src="https://page.genspark.site/v1/base64_upload/d6b58628397ee062ae2d3d082b48c6d9" alt="MedicalZero ロゴ" class="w-10 h-10 rounded-full shadow-sm bg-white border border-gray-200">
-        <span class="font-bold text-xl text-blue-700 tracking-wide">メディカルゼロ</span>
+        <img src="images/logo.jpg" alt="MedicalZeroロゴ" class="h-10 w-10 rounded-full bg-gray-100 object-contain">
+        <span class="font-bold text-xl text-blue-900 tracking-wide">メディカルゼロ</span>
       </div>
-      <nav class="hidden md:flex space-x-7 text-gray-700 text-base font-semibold">
-        <a href="index.html" class="hover:text-blue-600">ホーム</a>
-        <a href="characteristics.html" class="hover:text-blue-600">特徴</a>
-        <a href="solution.html" class="hover:text-blue-600">解決策</a>
-        <a href="difference.html" class="hover:text-blue-600">他塾との違い</a>
-        <a href="teacher.html" class="hover:text-blue-600">講師紹介</a>
-        <a href="story.html" class="hover:text-blue-600">ストーリー</a>
-        <a href="cost.html" class="text-blue-600 border-b-2 border-blue-500">料金・コース</a>
-        <a href="faq.html" class="hover:text-blue-600">アクセス・お問い合わせ</a>
+      <nav class="hidden md:flex space-x-8 text-base font-medium">
+        <a href="index.html" class="text-gray-700 hover:text-blue-700 transition">ホーム</a>
+        <a href="characteristics.html" class="text-gray-700 hover:text-blue-700 transition">特徴</a>
+        <a href="solution.html" class="text-gray-700 hover:text-blue-700 transition">解決策</a>
+        <a href="difference.html" class="text-gray-700 hover:text-blue-700 transition">他塾との違い</a>
+        <a href="teacher.html" class="text-gray-700 hover:text-blue-700 transition">講師紹介</a>
+        <a href="story.html" class="text-gray-700 hover:text-blue-700 transition">ストーリー</a>
+        <a href="cost.html" class="text-gray-700 hover:text-blue-700 transition">料金・コース</a>
+        <a href="faq.html" class="text-gray-700 hover:text-blue-700 transition">アクセス・お問い合わせ</a>
       </nav>
-      <a href="#" class="ml-4 px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-400 text-white font-bold rounded-lg shadow hover:from-blue-700 hover:to-blue-500 transition-colors duration-200">無料体験申込</a>
+      <a href="faq.html#form" class="nav-button hidden md:inline-block ml-6 px-5 py-2 rounded-full bg-blue-600 text-white font-bold transition shadow hover:bg-blue-700">無料体験申し込み</a>
+      <button id="menuBtn" class="md:hidden px-2 py-1">
+        <i class="fas fa-bars text-2xl text-blue-900"></i>
+      </button>
+    </div>
+    <!-- Mobile Nav -->
+    <div id="mobileNav" class="md:hidden fixed inset-0 z-50 bg-white bg-opacity-95 hidden flex-col p-8 space-y-6">
+      <div class="flex justify-between items-center mb-8">
+        <span class="font-bold text-xl text-blue-900 tracking-wide">メディカルゼロ</span>
+        <button onclick="document.getElementById('mobileNav').classList.add('hidden')"><i class="fas fa-times text-2xl text-blue-900"></i></button>
+      </div>
+      <a href="index.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">ホーム</a>
+      <a href="characteristics.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">特徴</a>
+      <a href="solution.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">解決策</a>
+      <a href="difference.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">他塾との違い</a>
+      <a href="teacher.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">講師紹介</a>
+      <a href="story.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">ストーリー</a>
+      <a href="cost.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">料金・コース</a>
+      <a href="faq.html" class="block text-gray-700 text-lg font-medium" onclick="closeNav()">アクセス・お問い合わせ</a>
+      <a href="faq.html#form" class="block text-gray-700 text-lg font-medium">無料体験申し込み</a>
     </div>
   </header>
 
@@ -94,7 +113,7 @@
     <div class="flex flex-col md:flex-row gap-8">
       <!-- 通常プラン -->
       <div class="plan-card bg-white px-7 py-8 rounded-2xl border-2 border-blue-100 flex-1 card-shadow">
-        <h3 class="text-xl font-bold text-blue-700 mb-2 flex items-center"><span class="icon-circle"><i class="fa-solid fa-book-open"></i></span>通常プラン</h3>
+        <h3 class="text-xl font-bold text-blue-700 mb-2 flex items-center"><span class="icon-circle"><i class="fa-solid fa-book-open"></i></span>習慣化プラン</h3>
         <span class="text-lg font-bold text-blue-900 block mb-2">月額35,000円<span class="text-sm text-gray-600 align-middle">（税込）</span></span>
         <p class="text-blue-500 font-bold mb-1">自習を軸に自己成長を加速させたい方向け</p>
         <ul class="mb-4 text-sm text-gray-600">
@@ -114,7 +133,7 @@
       <!-- 個別コンサルプラン -->
       <div class="plan-card bg-white px-7 py-8 rounded-2xl border-2 border-blue-300 flex-1 card-shadow relative z-1 shadow-sm">
         <div class="absolute right-3 top-3 px-3 py-1 text-xs bg-blue-100 text-blue-800 rounded-full font-bold">一番人気</div>
-        <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center"><span class="icon-circle"><i class="fa-solid fa-user-group"></i></span>個別コンサルプラン</h3>
+        <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center"><span class="icon-circle"><i class="fa-solid fa-user-group"></i></span>徹底サポートプラン</h3>
         <span class="text-lg font-bold text-blue-900 block mb-2">月額45,000円<span class="text-sm text-gray-600 align-middle">（税込）</span></span>
         <p class="text-blue-500 font-bold mb-1">専属コーチと二人三脚で確実に成長したい方向け</p>
         <ul class="mb-4 text-sm text-gray-600">
@@ -336,7 +355,7 @@
   <section class="max-w-3xl mx-auto px-4 mt-14 mb-24">
     <div class="bg-blue-700 rounded-xl shadow-lg p-6 flex flex-col items-center space-y-3">
       <h3 class="text-xl font-bold text-white">まずは無料体験からスタート！</h3>
-      <a href="#" class="px-8 py-3 bg-gradient-to-r from-blue-200 to-blue-400 text-blue-900 font-bold rounded-full text-lg shadow-md hover:from-blue-300 hover:to-blue-600 transition duration-150">無料体験申込フォームへ</a>
+      <a href="faq.html#form" class="px-8 py-3 bg-gradient-to-r from-blue-200 to-blue-400 text-blue-900 font-bold rounded-full text-lg shadow-md hover:from-blue-300 hover:to-blue-600 transition duration-150">無料体験申込フォームへ</a>
       <div class="text-white text-sm text-center">
         お気軽にお問い合わせください<br>
         <i class="fa-solid fa-phone mr-1"></i>080-3886-1480<br>
@@ -370,6 +389,32 @@
       </div>
     </div>
   </footer>
+    <!-- Dummy Contact Anchor -->
+  <div id="contact"></div>
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menuBtn').onclick = function() {
+      document.getElementById('mobileNav').classList.remove('hidden');
+    }
+    function closeNav() {
+      document.getElementById('mobileNav').classList.add('hidden');
+    }
+    // Animate on scroll
+    document.addEventListener('DOMContentLoaded', function(){
+      const faders = document.querySelectorAll('.fade-in');
+      function isInViewport(e) {
+        const rect = e.getBoundingClientRect();
+        return rect.top <= window.innerHeight-20 && rect.bottom >= 0;
+      }
+      function animateItems() {
+        faders.forEach(e=>{
+          if (isInViewport(e)) e.classList.add('opacity-100'); else e.classList.remove('opacity-100');
+        });
+      }
+      window.addEventListener('scroll', animateItems);
+      animateItems(); // initial
+    });
+  </script>
 </body>
 </html>
 
